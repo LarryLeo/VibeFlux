@@ -201,15 +201,23 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
   useEffect(() => {
     setInfoFrom(infoFrom)
     setInfoId(infoId)
-    if (activeContent) {
+  }, [infoFrom, infoId])
+
+  useEffect(() => {
+    const currentActiveContent = contentState.get().activeContent
+
+    if (currentActiveContent) {
       setActiveContent(null)
     }
+  }, [infoFrom, infoId])
+
+  useEffect(() => {
     if (infoFrom === "category") {
       fetchArticleListWithRelatedData()
     } else {
       fetchArticleListOnly()
     }
-  }, [activeContent, fetchArticleListOnly, fetchArticleListWithRelatedData, infoFrom, infoId])
+  }, [fetchArticleListOnly, fetchArticleListWithRelatedData, infoFrom, infoId])
 
   useEffect(() => {
     if (["starred", "history"].includes(infoFrom)) {
