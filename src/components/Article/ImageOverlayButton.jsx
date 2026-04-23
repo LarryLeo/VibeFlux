@@ -30,7 +30,7 @@ const ImageComponent = ({ imgNode, isIcon, isBigImage, index, togglePhotoSlider 
       />
     </Tooltip>
   ) : (
-    <div style={{ position: "relative" }}>
+    <span style={{ display: "inline-block", position: "relative", width: "100%" }}>
       <img
         {...normalizedImgAttributes}
         alt={altText}
@@ -46,7 +46,7 @@ const ImageComponent = ({ imgNode, isIcon, isBigImage, index, togglePhotoSlider 
           }}
         />
       </Tooltip>
-    </div>
+    </span>
   )
 }
 
@@ -110,10 +110,10 @@ const ImageOverlayButton = ({ node, index, togglePhotoSlider, isLinkWrapper = fa
   }
 
   return (
-    <div className="image-wrapper">
-      <div className="image-container">
+    <span className="image-wrapper">
+      <span className="image-container">
         {isLinkWrapper ? (
-          <div>
+          <span>
             <ImageComponent
               imgNode={imgNode}
               index={index}
@@ -122,7 +122,7 @@ const ImageOverlayButton = ({ node, index, togglePhotoSlider, isLinkWrapper = fa
               togglePhotoSlider={togglePhotoSlider}
             />
             <ImageLinkTag href={node.attribs.href} />
-          </div>
+          </span>
         ) : (
           <ImageComponent
             imgNode={imgNode}
@@ -132,8 +132,8 @@ const ImageOverlayButton = ({ node, index, togglePhotoSlider, isLinkWrapper = fa
             togglePhotoSlider={togglePhotoSlider}
           />
         )}
-      </div>
-    </div>
+      </span>
+    </span>
   )
 }
 
