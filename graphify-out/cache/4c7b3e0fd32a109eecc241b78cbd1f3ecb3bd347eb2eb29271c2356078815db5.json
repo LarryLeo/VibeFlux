@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "src_store_datastate_js",
+      "label": "dataState.js",
+      "file_type": "code",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "datastate_setiscoredataready",
+      "label": "setIsCoreDataReady()",
+      "file_type": "code",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L120"
+    },
+    {
+      "id": "datastate_resetdata",
+      "label": "resetData()",
+      "file_type": "code",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L128"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_store_datastate_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_datastate_js",
+      "target": "src_store_settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_datastate_js",
+      "target": "locales",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_datastate_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_datastate_js",
+      "target": "datastate_setiscoredataready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_datastate_js",
+      "target": "datastate_resetdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L128",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "datastate_setiscoredataready",
+      "callee": "setKey",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L121"
+    },
+    {
+      "caller_nid": "datastate_resetdata",
+      "callee": "set",
+      "source_file": "src\\store\\dataState.js",
+      "source_location": "L128"
+    }
+  ]
+}

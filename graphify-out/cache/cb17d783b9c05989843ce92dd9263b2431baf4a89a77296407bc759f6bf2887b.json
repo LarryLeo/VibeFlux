@@ -1,0 +1,210 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_codeblock_jsx",
+      "label": "CodeBlock.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "codeblock_codeblock",
+      "label": "CodeBlock()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "codeblock_languageselector",
+      "label": "LanguageSelector()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L57"
+    },
+    {
+      "id": "codeblock_copybutton",
+      "label": "CopyButton()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L77"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "highlight_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "hljs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "customtooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "highlighter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "src_components_article_codeblock_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "codeblock_codeblock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "codeblock_languageselector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_codeblock_jsx",
+      "target": "codeblock_copybutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L77",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "codeblock_codeblock",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "codeblock_codeblock",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "codeblock_codeblock",
+      "callee": "useCallback",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "codeblock_codeblock",
+      "callee": "trim",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "codeblock_codeblock",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "codeblock_languageselector",
+      "callee": "map",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "codeblock_copybutton",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "codeblock_copybutton",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\CodeBlock.jsx",
+      "source_location": "L81"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": "devices_showcase_mockup",
+      "label": "Devices Showcase Mockup",
+      "file_type": "image",
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "devices_reactflux_interface",
+      "label": "ReactFlux Interface",
+      "file_type": "image",
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "devices_desktop_three_pane_layout",
+      "label": "Desktop Three-Pane Layout",
+      "file_type": "image",
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "devices_mobile_article_view",
+      "label": "Mobile Article View",
+      "file_type": "image",
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "devices_cross_device_reading_experience",
+      "label": "Cross-Device Reading Experience",
+      "file_type": "image",
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "devices_showcase_mockup",
+      "target": "devices_reactflux_interface",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "devices_reactflux_interface",
+      "target": "devices_desktop_three_pane_layout",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "devices_reactflux_interface",
+      "target": "devices_mobile_article_view",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "devices_cross_device_reading_experience",
+      "target": "devices_reactflux_interface",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.86,
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "devices_desktop_three_pane_layout",
+      "target": "devices_mobile_article_view",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.82,
+      "source_file": "images\\devices.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "devices_multi_device_interface_system",
+      "label": "Multi-Device Interface System",
+      "nodes": [
+        "devices_reactflux_interface",
+        "devices_desktop_three_pane_layout",
+        "devices_mobile_article_view"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\devices.png"
+    }
+  ]
+}

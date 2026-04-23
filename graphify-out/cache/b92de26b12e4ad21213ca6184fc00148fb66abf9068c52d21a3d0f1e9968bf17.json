@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_usescreenwidth_js",
+      "label": "useScreenWidth.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useScreenWidth.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "usescreenwidth_usescreenwidth",
+      "label": "useScreenWidth()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useScreenWidth.js",
+      "source_location": "L6"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_usescreenwidth_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useScreenWidth.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usescreenwidth_js",
+      "target": "usescreenwidth_usescreenwidth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useScreenWidth.js",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usescreenwidth_usescreenwidth",
+      "callee": "useState",
+      "source_file": "src\\hooks\\useScreenWidth.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "usescreenwidth_usescreenwidth",
+      "callee": "useState",
+      "source_file": "src\\hooks\\useScreenWidth.js",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "usescreenwidth_usescreenwidth",
+      "callee": "useEffect",
+      "source_file": "src\\hooks\\useScreenWidth.js",
+      "source_location": "L10"
+    }
+  ]
+}

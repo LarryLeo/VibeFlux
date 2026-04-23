@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_filter_js",
+      "label": "filter.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "filter_includesignorecase",
+      "label": "includesIgnoreCase()",
+      "file_type": "code",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "filter_filterentries",
+      "label": "filterEntries()",
+      "file_type": "code",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_filter_js",
+      "target": "src_utils_kmp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_filter_js",
+      "target": "filter_includesignorecase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_filter_js",
+      "target": "filter_filterentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "filter_includesignorecase",
+      "callee": "includes",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L4"
+    },
+    {
+      "caller_nid": "filter_includesignorecase",
+      "callee": "toLowerCase",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L4"
+    },
+    {
+      "caller_nid": "filter_includesignorecase",
+      "callee": "toLowerCase",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L4"
+    },
+    {
+      "caller_nid": "filter_filterentries",
+      "callee": "filterByQuery",
+      "source_file": "src\\utils\\filter.js",
+      "source_location": "L11"
+    }
+  ]
+}

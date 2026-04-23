@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_usearticlelist_js",
+      "label": "useArticleList.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "usearticlelist_handleresponses",
+      "label": "handleResponses()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "usearticlelist_usearticlelist",
+      "label": "useArticleList()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L32"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "images",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "kmp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "usearticlelist_handleresponses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usearticlelist_js",
+      "target": "usearticlelist_usearticlelist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L32",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usearticlelist_handleresponses",
+      "callee": "map",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "usearticlelist_handleresponses",
+      "callee": "setEntriesWithDeduplication",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "usearticlelist_handleresponses",
+      "callee": "setTotal",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "usearticlelist_handleresponses",
+      "callee": "setLoadMoreVisible",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "usearticlelist_usearticlelist",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "usearticlelist_usearticlelist",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "usearticlelist_usearticlelist",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "usearticlelist_usearticlelist",
+      "callee": "useRef",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "usearticlelist_usearticlelist",
+      "callee": "useEffect",
+      "source_file": "src\\hooks\\useArticleList.js",
+      "source_location": "L114"
+    }
+  ]
+}

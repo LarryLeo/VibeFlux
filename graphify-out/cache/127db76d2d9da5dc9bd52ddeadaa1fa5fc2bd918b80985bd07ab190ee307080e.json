@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_settings_editabletag_jsx",
+      "label": "EditableTag.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "editabletag_editabletag",
+      "label": "EditableTag()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_settings_editabletag_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_editabletag_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_editabletag_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_editabletag_jsx",
+      "target": "hotkeysstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_editabletag_jsx",
+      "target": "editabletag_editabletag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "editabletag_editabletag",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "editabletag_editabletag",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "editabletag_editabletag",
+      "callee": "useCallback",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "editabletag_editabletag",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "editabletag_editabletag",
+      "callee": "includes",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "editabletag_editabletag",
+      "callee": "includes",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "editabletag_editabletag",
+      "callee": "includes",
+      "source_file": "src\\components\\Settings\\EditableTag.jsx",
+      "source_location": "L92"
+    }
+  ]
+}

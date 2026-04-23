@@ -1,0 +1,645 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_articledetail_jsx",
+      "label": "ArticleDetail.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "articledetail_handlelinkwithimage",
+      "label": "handleLinkWithImage()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L36"
+    },
+    {
+      "id": "articledetail_handlebskyvideo",
+      "label": "handleBskyVideo()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L70"
+    },
+    {
+      "id": "articledetail_handleimage",
+      "label": "handleImage()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "articledetail_decodeandparsecodecontent",
+      "label": "decodeAndParseCodeContent()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L99"
+    },
+    {
+      "id": "articledetail_handletablebasedcode",
+      "label": "handleTableBasedCode()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L117"
+    },
+    {
+      "id": "articledetail_handlecontenttable",
+      "label": "handleContentTable()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L151"
+    },
+    {
+      "id": "articledetail_processfigcaptioncontent",
+      "label": "processFigcaptionContent()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L172"
+    },
+    {
+      "id": "articledetail_handlefigure",
+      "label": "handleFigure()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L199"
+    },
+    {
+      "id": "articledetail_handlecodeblock",
+      "label": "handleCodeBlock()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L243"
+    },
+    {
+      "id": "articledetail_handlevideo",
+      "label": "handleVideo()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L267"
+    },
+    {
+      "id": "articledetail_handleiframe",
+      "label": "handleIframe()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L281"
+    },
+    {
+      "id": "articledetail_gethtmlparseroptions",
+      "label": "getHtmlParserOptions()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L292"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "html_react_parser",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "littlefoot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "simplebar_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "yet_another_react_lightbox",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "counter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "fullscreen",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "zoom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "styles_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "counter_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "src_components_article_codeblock",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "src_components_article_imagelinktag",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "src_components_article_imageoverlaybutton",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "customlink",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "fadetransition",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "plyrplayer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "usephotoslider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "usescreenwidth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "images",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "src_components_article_articledetail_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "src_components_article_littlefoot_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handlelinkwithimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handlebskyvideo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handleimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_decodeandparsecodecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handletablebasedcode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handlecontenttable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_processfigcaptioncontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L172",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handlefigure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handlecodeblock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handlevideo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L267",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_handleiframe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articledetail_jsx",
+      "target": "articledetail_gethtmlparseroptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L292",
+      "weight": 1.0
+    },
+    {
+      "source": "articledetail_handleimage",
+      "target": "articledetail_handlebskyvideo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "articledetail_handletablebasedcode",
+      "target": "articledetail_decodeandparsecodecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "articledetail_handlefigure",
+      "target": "articledetail_decodeandparsecodecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L205",
+      "weight": 1.0
+    },
+    {
+      "source": "articledetail_handlefigure",
+      "target": "articledetail_handletablebasedcode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L211",
+      "weight": 1.0
+    },
+    {
+      "source": "articledetail_handlecodeblock",
+      "target": "articledetail_decodeandparsecodecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L261",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "articledetail_handlelinkwithimage",
+      "callee": "filter",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "articledetail_handlelinkwithimage",
+      "callee": "map",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "articledetail_handlelinkwithimage",
+      "callee": "indexOf",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "articledetail_handlebskyvideo",
+      "callee": "test",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "articledetail_handlebskyvideo",
+      "callee": "replace",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "articledetail_handleimage",
+      "callee": "indexOf",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L87"
+    },
+    {
+      "caller_nid": "articledetail_decodeandparsecodecontent",
+      "callee": "replaceAll",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "articledetail_decodeandparsecodecontent",
+      "callee": "join",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "articledetail_decodeandparsecodecontent",
+      "callee": "map",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "articledetail_decodeandparsecodecontent",
+      "callee": "join",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L112"
+    },
+    {
+      "caller_nid": "articledetail_decodeandparsecodecontent",
+      "callee": "keys",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L112"
+    },
+    {
+      "caller_nid": "articledetail_handletablebasedcode",
+      "callee": "find",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L118"
+    },
+    {
+      "caller_nid": "articledetail_handletablebasedcode",
+      "callee": "find",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L123"
+    },
+    {
+      "caller_nid": "articledetail_handletablebasedcode",
+      "callee": "filter",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L129"
+    },
+    {
+      "caller_nid": "articledetail_handletablebasedcode",
+      "callee": "find",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "articledetail_handletablebasedcode",
+      "callee": "find",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "articledetail_handlecontenttable",
+      "callee": "find",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L152"
+    },
+    {
+      "caller_nid": "articledetail_handlecontenttable",
+      "callee": "filter",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L159"
+    },
+    {
+      "caller_nid": "articledetail_processfigcaptioncontent",
+      "callee": "map",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L177"
+    },
+    {
+      "caller_nid": "articledetail_handlefigure",
+      "callee": "some",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L201"
+    },
+    {
+      "caller_nid": "articledetail_handlefigure",
+      "callee": "map",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L219"
+    },
+    {
+      "caller_nid": "articledetail_handlecodeblock",
+      "callee": "test",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L248"
+    },
+    {
+      "caller_nid": "articledetail_handlevideo",
+      "callee": "find",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L268"
+    },
+    {
+      "caller_nid": "articledetail_handleiframe",
+      "callee": "includes",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L285"
+    },
+    {
+      "caller_nid": "articledetail_handleiframe",
+      "callee": "includes",
+      "source_file": "src\\components\\Article\\ArticleDetail.jsx",
+      "source_location": "L285"
+    }
+  ]
+}

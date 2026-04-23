@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "src_store_feediconsstate_js",
+      "label": "feedIconsState.js",
+      "file_type": "code",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "feediconsstate_updatefeedicon",
+      "label": "updateFeedIcon()",
+      "file_type": "code",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "feediconsstate_resetfeedicons",
+      "label": "resetFeedIcons()",
+      "file_type": "code",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L8"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_store_feediconsstate_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_feediconsstate_js",
+      "target": "feediconsstate_updatefeedicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_feediconsstate_js",
+      "target": "feediconsstate_resetfeedicons",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L8",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "feediconsstate_updatefeedicon",
+      "callee": "setKey",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "feediconsstate_updatefeedicon",
+      "callee": "get",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "feediconsstate_resetfeedicons",
+      "callee": "set",
+      "source_file": "src\\store\\feedIconsState.js",
+      "source_location": "L8"
+    }
+  ]
+}

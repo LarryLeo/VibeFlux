@@ -1,0 +1,271 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_usecontenthotkeys_js",
+      "label": "useContentHotkeys.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "usecontenthotkeys_usecontenthotkeys",
+      "label": "useContentHotkeys()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_usecontenthotkeys_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usecontenthotkeys_js",
+      "target": "react_hotkeys_hook",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usecontenthotkeys_js",
+      "target": "useentryactions",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usecontenthotkeys_js",
+      "target": "usekeyhandlers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usecontenthotkeys_js",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usecontenthotkeys_js",
+      "target": "hotkeysstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usecontenthotkeys_js",
+      "target": "usecontenthotkeys_usecontenthotkeys",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L11"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useKeyHandlers",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useEntryActions",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "useHotkeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "usecontenthotkeys_usecontenthotkeys",
+      "callee": "removeConflictingKeys",
+      "source_file": "src\\hooks\\useContentHotkeys.js",
+      "source_location": "L76"
+    }
+  ]
+}

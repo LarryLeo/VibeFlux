@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_useappdata_js",
+      "label": "useAppData.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "useappdata_useappdata",
+      "label": "useAppData()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L24"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_useappdata_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useappdata_js",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useappdata_js",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useappdata_js",
+      "target": "version",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useappdata_js",
+      "target": "useappdata_useappdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L24",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useRef",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "useappdata_useappdata",
+      "callee": "useCallback",
+      "source_file": "src\\hooks\\useAppData.js",
+      "source_location": "L122"
+    }
+  ]
+}

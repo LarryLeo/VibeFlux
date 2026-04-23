@@ -1,0 +1,272 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_useentryactions_js",
+      "label": "useEntryActions.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "useentryactions_updateentries",
+      "label": "updateEntries()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L21"
+    },
+    {
+      "id": "useentryactions_handleentriesstatusupdate",
+      "label": "handleEntriesStatusUpdate()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L32"
+    },
+    {
+      "id": "useentryactions_handleentrystatusupdate",
+      "label": "handleEntryStatusUpdate()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L79"
+    },
+    {
+      "id": "useentryactions_handleopenlinkexternally",
+      "label": "handleOpenLinkExternally()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L83"
+    },
+    {
+      "id": "useentryactions_useentryactions",
+      "label": "useEntryActions()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L87"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "canvas_confetti",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "useentryactions_updateentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "useentryactions_handleentriesstatusupdate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "useentryactions_handleentrystatusupdate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "useentryactions_handleopenlinkexternally",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useentryactions_js",
+      "target": "useentryactions_useentryactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "useentryactions_handleentrystatusupdate",
+      "target": "useentryactions_handleentriesstatusupdate",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L80",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "useentryactions_updateentries",
+      "callee": "map",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "useentryactions_updateentries",
+      "callee": "map",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "filter",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "setHistoryCount",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "setHistoryCount",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "checkIsInLast24Hours",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "setUnreadTodayCount",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "setUnreadInfo",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "map",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "get",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "find",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "setActiveContent",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "useentryactions_handleentriesstatusupdate",
+      "callee": "setEntries",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "useentryactions_handleopenlinkexternally",
+      "callee": "open",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "useentryactions_useentryactions",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "useentryactions_useentryactions",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useEntryActions.js",
+      "source_location": "L89"
+    }
+  ]
+}

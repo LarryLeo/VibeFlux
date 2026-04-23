@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_form_js",
+      "label": "form.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "form_validateandformatformfields",
+      "label": "validateAndFormatFormFields()",
+      "file_type": "code",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "form_handleenterkeytosubmit",
+      "label": "handleEnterKeyToSubmit()",
+      "file_type": "code",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L22"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_form_js",
+      "target": "form_validateandformatformfields",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_form_js",
+      "target": "form_handleenterkeytosubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L22",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "form_validateandformatformfields",
+      "callee": "getFieldsValue",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L3"
+    },
+    {
+      "caller_nid": "form_validateandformatformfields",
+      "callee": "entries",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "form_validateandformatformfields",
+      "callee": "trim",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "form_validateandformatformfields",
+      "callee": "setFieldValue",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "form_handleenterkeytosubmit",
+      "callee": "submit",
+      "source_file": "src\\utils\\form.js",
+      "source_location": "L24"
+    }
+  ]
+}

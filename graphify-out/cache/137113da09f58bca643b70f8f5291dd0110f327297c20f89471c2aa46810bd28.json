@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_ui_ripple_jsx",
+      "label": "Ripple.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ripple_usedebouncedripplecleanup",
+      "label": "useDebouncedRippleCleanUp()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "ripple_ripple",
+      "label": "Ripple()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L21"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_ui_ripple_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_ripple_jsx",
+      "target": "src_components_ui_ripple_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_ripple_jsx",
+      "target": "ripple_usedebouncedripplecleanup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_ripple_jsx",
+      "target": "ripple_ripple",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "ripple_ripple",
+      "target": "ripple_usedebouncedripplecleanup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "ripple_usedebouncedripplecleanup",
+      "callee": "useLayoutEffect",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "ripple_ripple",
+      "callee": "useState",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "ripple_ripple",
+      "callee": "map",
+      "source_file": "src\\components\\ui\\Ripple.jsx",
+      "source_location": "L46"
+    }
+  ]
+}

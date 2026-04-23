@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "src_store_sidebarstate_js",
+      "label": "sidebarState.js",
+      "file_type": "code",
+      "source_file": "src\\store\\sidebarState.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "sidebarstate_setexpandedcategories",
+      "label": "setExpandedCategories()",
+      "file_type": "code",
+      "source_file": "src\\store\\sidebarState.js",
+      "source_location": "L8"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_store_sidebarstate_js",
+      "target": "persistent",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\sidebarState.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_sidebarstate_js",
+      "target": "sidebarstate_setexpandedcategories",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\sidebarState.js",
+      "source_location": "L8",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "sidebarstate_setexpandedcategories",
+      "callee": "set",
+      "source_file": "src\\store\\sidebarState.js",
+      "source_location": "L9"
+    }
+  ]
+}

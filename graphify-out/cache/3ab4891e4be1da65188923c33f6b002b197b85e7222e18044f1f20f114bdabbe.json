@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_sidebartrigger_jsx",
+      "label": "SidebarTrigger.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "sidebartrigger_sidebartrigger",
+      "label": "SidebarTrigger()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "sidebar",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "usescreenwidth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "src_components_article_sidebartrigger_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_sidebartrigger_jsx",
+      "target": "sidebartrigger_sidebartrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "sidebartrigger_sidebartrigger",
+      "callee": "useLocation",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "sidebartrigger_sidebartrigger",
+      "callee": "useScreenWidth",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "sidebartrigger_sidebartrigger",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "sidebartrigger_sidebartrigger",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "sidebartrigger_sidebartrigger",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Article\\SidebarTrigger.jsx",
+      "source_location": "L28"
+    }
+  ]
+}

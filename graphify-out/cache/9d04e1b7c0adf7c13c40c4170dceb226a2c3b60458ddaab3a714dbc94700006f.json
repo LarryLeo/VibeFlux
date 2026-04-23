@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_usefeedoperations_js",
+      "label": "useFeedOperations.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "usefeedoperations_updatefeedstatus",
+      "label": "updateFeedStatus()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "usefeedoperations_handlefeedrefresh",
+      "label": "handleFeedRefresh()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L21"
+    },
+    {
+      "id": "usefeedoperations_usefeedoperations",
+      "label": "useFeedOperations()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L60"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "feeds",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "usefeedoperations_updatefeedstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "usefeedoperations_handlefeedrefresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usefeedoperations_js",
+      "target": "usefeedoperations_usefeedoperations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L60",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usefeedoperations_updatefeedstatus",
+      "callee": "getUTCDate",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "get",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "refreshFunc",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "t",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "t",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "showMessage",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "setFeedsData",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "error",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "showMessage",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "t",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "usefeedoperations_handlefeedrefresh",
+      "callee": "setFeedsData",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "usefeedoperations_usefeedoperations",
+      "callee": "get",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "usefeedoperations_usefeedoperations",
+      "callee": "get",
+      "source_file": "src\\hooks\\useFeedOperations.js",
+      "source_location": "L62"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "src_apis_categories_js",
+      "label": "categories.js",
+      "file_type": "code",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "categories_getcategories",
+      "label": "getCategories()",
+      "file_type": "code",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "categories_refreshcategoryfeed",
+      "label": "refreshCategoryFeed()",
+      "file_type": "code",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L8"
+    },
+    {
+      "id": "categories_addcategory",
+      "label": "addCategory()",
+      "file_type": "code",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "categories_deletecategory",
+      "label": "deleteCategory()",
+      "file_type": "code",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L13"
+    },
+    {
+      "id": "categories_updatecategory",
+      "label": "updateCategory()",
+      "file_type": "code",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L16"
+    },
+    {
+      "id": "categories_markcategoryasread",
+      "label": "markCategoryAsRead()",
+      "file_type": "code",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L31"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_apis_categories_js",
+      "target": "src_apis_ofetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "version",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "categories_getcategories",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "categories_refreshcategoryfeed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "categories_addcategory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "categories_deletecategory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "categories_updatecategory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_categories_js",
+      "target": "categories_markcategoryasread",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L31",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "categories_getcategories",
+      "callee": "get",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "categories_refreshcategoryfeed",
+      "callee": "raw",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "categories_addcategory",
+      "callee": "post",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L11"
+    },
+    {
+      "caller_nid": "categories_deletecategory",
+      "callee": "raw",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "categories_updatecategory",
+      "callee": "get",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "categories_updatecategory",
+      "callee": "compareVersions",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "categories_updatecategory",
+      "callee": "put",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "categories_markcategoryasread",
+      "callee": "put",
+      "source_file": "src\\apis\\categories.js",
+      "source_location": "L32"
+    }
+  ]
+}

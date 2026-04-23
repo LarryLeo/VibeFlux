@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_settings_hotkeys_jsx",
+      "label": "Hotkeys.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "hotkeys_hotkeys",
+      "label": "Hotkeys()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_settings_hotkeys_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_hotkeys_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_hotkeys_jsx",
+      "target": "src_components_settings_editabletaggroup",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_hotkeys_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_hotkeys_jsx",
+      "target": "hotkeysstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_hotkeys_jsx",
+      "target": "hotkeys_hotkeys",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "hotkeys_hotkeys",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "hotkeys_hotkeys",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L11"
+    },
+    {
+      "caller_nid": "hotkeys_hotkeys",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "hotkeys_hotkeys",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "hotkeys_hotkeys",
+      "callee": "map",
+      "source_file": "src\\components\\Settings\\Hotkeys.jsx",
+      "source_location": "L43"
+    }
+  ]
+}

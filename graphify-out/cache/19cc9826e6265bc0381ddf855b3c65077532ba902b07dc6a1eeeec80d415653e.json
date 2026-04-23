@@ -1,0 +1,555 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_date_js",
+      "label": "date.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "date_checkisinlast24hours",
+      "label": "checkIsInLast24Hours()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L14"
+    },
+    {
+      "id": "date_get24hoursagotimestamp",
+      "label": "get24HoursAgoTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L19"
+    },
+    {
+      "id": "date_gettimestamp",
+      "label": "getTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L21"
+    },
+    {
+      "id": "date_getstartoftoday",
+      "label": "getStartOfToday()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "date_getdayendtimestamp",
+      "label": "getDayEndTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L25"
+    },
+    {
+      "id": "date_getutcdate",
+      "label": "getUTCDate()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L27"
+    },
+    {
+      "id": "date_generatereadabledate",
+      "label": "generateReadableDate()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L29"
+    },
+    {
+      "id": "date_generaterelativetime",
+      "label": "generateRelativeTime()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L31"
+    },
+    {
+      "id": "date_generatereadingtime",
+      "label": "generateReadingTime()",
+      "file_type": "code",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L83"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_date_js",
+      "target": "dayjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "duration",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "localizedformat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "relativetime",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "utc",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_checkisinlast24hours",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_get24hoursagotimestamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_gettimestamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_getstartoftoday",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_getdayendtimestamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_getutcdate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_generatereadabledate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_generaterelativetime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_date_js",
+      "target": "date_generatereadingtime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L83",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "date_checkisinlast24hours",
+      "callee": "test",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "date_checkisinlast24hours",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "date_checkisinlast24hours",
+      "callee": "Number",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "date_checkisinlast24hours",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "date_checkisinlast24hours",
+      "callee": "isAfter",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "date_checkisinlast24hours",
+      "callee": "subtract",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "date_checkisinlast24hours",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "date_get24hoursagotimestamp",
+      "callee": "unix",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "date_get24hoursagotimestamp",
+      "callee": "subtract",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "date_get24hoursagotimestamp",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "date_gettimestamp",
+      "callee": "unix",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "date_gettimestamp",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "date_getstartoftoday",
+      "callee": "startOf",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "date_getstartoftoday",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "date_getdayendtimestamp",
+      "callee": "unix",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "date_getdayendtimestamp",
+      "callee": "endOf",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "date_getdayendtimestamp",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "date_getutcdate",
+      "callee": "format",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "date_getutcdate",
+      "callee": "utc",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "date_getutcdate",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "date_generatereadabledate",
+      "callee": "format",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "date_generatereadabledate",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "get",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "from",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "asSeconds",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "duration",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "diff",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "dayjs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "diff",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "duration",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "abs",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "years",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "months",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "days",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "hours",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "minutes",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "push",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "push",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "push",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "push",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "push",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "join",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "date_generaterelativetime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L80"
+    },
+    {
+      "caller_nid": "date_generatereadingtime",
+      "callee": "get",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "date_generatereadingtime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "date_generatereadingtime",
+      "callee": "t",
+      "source_file": "src\\utils\\date.js",
+      "source_location": "L87"
+    }
+  ]
+}

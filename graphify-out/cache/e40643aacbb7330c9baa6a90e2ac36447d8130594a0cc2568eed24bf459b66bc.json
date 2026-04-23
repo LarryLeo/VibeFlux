@@ -1,0 +1,187 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_articlelist_jsx",
+      "label": "ArticleList.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "articlelist_loadmorecomponent",
+      "label": "LoadMoreComponent()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L19"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "lodash_es",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "react_intersection_observer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "simplebar_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "virtua",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "src_components_article_articlecard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "src_components_article_loadingcards",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "fadetransition",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "ripple",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "useloadmore",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "src_components_article_articlelist_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlelist_jsx",
+      "target": "articlelist_loadmorecomponent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "articlelist_loadmorecomponent",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "articlelist_loadmorecomponent",
+      "callee": "useLoadMore",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "articlelist_loadmorecomponent",
+      "callee": "useInView",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "articlelist_loadmorecomponent",
+      "callee": "useCallback",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "articlelist_loadmorecomponent",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Article\\ArticleList.jsx",
+      "source_location": "L32"
+    }
+  ]
+}

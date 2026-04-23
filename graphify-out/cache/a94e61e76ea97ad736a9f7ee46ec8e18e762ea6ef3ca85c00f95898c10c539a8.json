@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "src_store_hotkeysstate_js",
+      "label": "hotkeysState.js",
+      "file_type": "code",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "hotkeysstate_updatehotkey",
+      "label": "updateHotkey()",
+      "file_type": "code",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L53"
+    },
+    {
+      "id": "hotkeysstate_resethotkey",
+      "label": "resetHotkey()",
+      "file_type": "code",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L57"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_store_hotkeysstate_js",
+      "target": "persistent",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_hotkeysstate_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_hotkeysstate_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_hotkeysstate_js",
+      "target": "hotkeysstate_updatehotkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_hotkeysstate_js",
+      "target": "hotkeysstate_resethotkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "hotkeysstate_resethotkey",
+      "target": "hotkeysstate_updatehotkey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L57",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "hotkeysstate_updatehotkey",
+      "callee": "createSetter",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "hotkeysstate_updatehotkey",
+      "callee": "setter",
+      "source_file": "src\\store\\hotkeysState.js",
+      "source_location": "L55"
+    }
+  ]
+}

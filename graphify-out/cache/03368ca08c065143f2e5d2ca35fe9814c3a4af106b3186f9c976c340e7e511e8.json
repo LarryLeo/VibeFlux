@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_uselanguage_js",
+      "label": "useLanguage.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "uselanguage_loadlanguage",
+      "label": "loadLanguage()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L28"
+    },
+    {
+      "id": "uselanguage_uselanguage",
+      "label": "useLanguage()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L55"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "dayjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "de",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "en",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "es",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "fr",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "zh_cn",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "node_polyglot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "locales",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "uselanguage_loadlanguage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_uselanguage_js",
+      "target": "uselanguage_uselanguage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L55",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "uselanguage_loadlanguage",
+      "callee": "import",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "uselanguage_loadlanguage",
+      "callee": "error",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "uselanguage_loadlanguage",
+      "callee": "import",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "uselanguage_loadlanguage",
+      "callee": "replace",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "uselanguage_loadlanguage",
+      "callee": "locale",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "uselanguage_loadlanguage",
+      "callee": "setPolyglot",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "uselanguage_loadlanguage",
+      "callee": "setPolyglot",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "uselanguage_uselanguage",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "uselanguage_uselanguage",
+      "callee": "useEffect",
+      "source_file": "src\\hooks\\useLanguage.js",
+      "source_location": "L58"
+    }
+  ]
+}

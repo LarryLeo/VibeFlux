@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "src_apis_ofetch_js",
+      "label": "ofetch.js",
+      "file_type": "code",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "ofetch_createapiclient",
+      "label": "createApiClient()",
+      "file_type": "code",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L8"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_apis_ofetch_js",
+      "target": "ofetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_ofetch_js",
+      "target": "routes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_ofetch_js",
+      "target": "authstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_ofetch_js",
+      "target": "auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_ofetch_js",
+      "target": "ofetch_createapiclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L8",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "ofetch_createapiclient",
+      "callee": "create",
+      "source_file": "src\\apis\\ofetch.js",
+      "source_location": "L9"
+    }
+  ]
+}

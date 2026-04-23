@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_feed_jsx",
+      "label": "Feed.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "feed_feed",
+      "label": "Feed()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_feed_jsx",
+      "target": "lodash_es",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_feed_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_feed_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_feed_jsx",
+      "target": "content",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_feed_jsx",
+      "target": "feed_feed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "feed_feed",
+      "callee": "useParams",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "feed_feed",
+      "callee": "partial",
+      "source_file": "src\\pages\\Feed.jsx",
+      "source_location": "L10"
+    }
+  ]
+}

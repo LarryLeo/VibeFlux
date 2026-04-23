@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_dom_js",
+      "label": "dom.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "dom_extractheadings",
+      "label": "extractHeadings()",
+      "file_type": "code",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "dom_scrolltoheading",
+      "label": "scrollToHeading()",
+      "file_type": "code",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L24"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_dom_js",
+      "target": "dom_extractheadings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_dom_js",
+      "target": "dom_scrolltoheading",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L24",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "dom_extractheadings",
+      "callee": "parseFromString",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "dom_extractheadings",
+      "callee": "querySelectorAll",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "dom_extractheadings",
+      "callee": "map",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "dom_scrolltoheading",
+      "callee": "querySelectorAll",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "dom_scrolltoheading",
+      "callee": "trim",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "dom_scrolltoheading",
+      "callee": "scrollIntoView",
+      "source_file": "src\\utils\\dom.js",
+      "source_location": "L29"
+    }
+  ]
+}

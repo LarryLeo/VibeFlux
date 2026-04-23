@@ -1,0 +1,304 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_highlighter_js",
+      "label": "highlighter.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "highlighter_registerlanguages",
+      "label": "registerLanguages()",
+      "file_type": "code",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L63"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "react_syntax_highlighter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "bash",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "c",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "cpp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "csharp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "diff",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "dockerfile",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "go",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "ini",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "java",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "javascript",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "json",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "kotlin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "lua",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "markdown",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "php",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "php_template",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "plaintext",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "powershell",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "python",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "ruby",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "rust",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "shell",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "sql",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "swift",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "typescript",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "xml",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "yaml",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_highlighter_js",
+      "target": "highlighter_registerlanguages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L63",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "highlighter_registerlanguages",
+      "callee": "entries",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "highlighter_registerlanguages",
+      "callee": "registerLanguage",
+      "source_file": "src\\utils\\highlighter.js",
+      "source_location": "L65"
+    }
+  ]
+}

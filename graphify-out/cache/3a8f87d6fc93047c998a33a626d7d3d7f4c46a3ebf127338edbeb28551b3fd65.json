@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_today_jsx",
+      "label": "Today.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "today_getentries",
+      "label": "getEntries()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "today_marktodayasread",
+      "label": "markTodayAsRead()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "today_today",
+      "label": "Today()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L21"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_today_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_today_jsx",
+      "target": "content",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_today_jsx",
+      "target": "today_getentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_today_jsx",
+      "target": "today_marktodayasread",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_today_jsx",
+      "target": "today_today",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "today_getentries",
+      "callee": "getTodayEntries",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L4"
+    },
+    {
+      "caller_nid": "today_marktodayasread",
+      "callee": "getTodayEntries",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "today_marktodayasread",
+      "callee": "then",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "today_marktodayasread",
+      "callee": "getTodayEntries",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "today_marktodayasread",
+      "callee": "map",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "today_marktodayasread",
+      "callee": "updateEntriesStatus",
+      "source_file": "src\\pages\\Today.jsx",
+      "source_location": "L18"
+    }
+  ]
+}

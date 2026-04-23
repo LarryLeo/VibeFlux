@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_ui_editcategorymodal_jsx",
+      "label": "EditCategoryModal.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "editcategorymodal_editcategorymodal",
+      "label": "EditCategoryModal()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_ui_editcategorymodal_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editcategorymodal_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editcategorymodal_jsx",
+      "target": "usecategoryoperations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editcategorymodal_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editcategorymodal_jsx",
+      "target": "editcategorymodal_editcategorymodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "editcategorymodal_editcategorymodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "editcategorymodal_editcategorymodal",
+      "callee": "useCategoryOperations",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "editcategorymodal_editcategorymodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "editcategorymodal_editcategorymodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "editcategorymodal_editcategorymodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "editcategorymodal_editcategorymodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditCategoryModal.jsx",
+      "source_location": "L42"
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_main_main_jsx",
+      "label": "Main.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "main_settingsmodal",
+      "label": "SettingsModal()",
+      "file_type": "code",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "main_addfeedmodal",
+      "label": "AddFeedModal()",
+      "file_type": "code",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "main_main",
+      "label": "Main()",
+      "file_type": "code",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L173"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "contentcontext",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "settingstabs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "useappdata",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "usemodaltoggle",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "usescreenwidth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "filter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "src_components_main_main_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "main_settingsmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "main_addfeedmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_main_main_jsx",
+      "target": "main_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L173",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "main_settingsmodal",
+      "callee": "useLocation",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "main_settingsmodal",
+      "callee": "useScreenWidth",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "main_settingsmodal",
+      "callee": "useModalToggle",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "main_settingsmodal",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useState",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useForm",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useAppData",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useModalToggle",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "useNavigate",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L133"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L146"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "map",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L151"
+    },
+    {
+      "caller_nid": "main_addfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Main\\Main.jsx",
+      "source_location": "L161"
+    }
+  ]
+}

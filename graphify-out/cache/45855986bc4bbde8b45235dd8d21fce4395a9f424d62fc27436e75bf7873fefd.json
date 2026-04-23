@@ -1,0 +1,918 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_sidebar_sidebar_jsx",
+      "label": "Sidebar.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "sidebar_categorytitle",
+      "label": "CategoryTitle()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L66"
+    },
+    {
+      "id": "sidebar_countdisplay",
+      "label": "CountDisplay()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L177"
+    },
+    {
+      "id": "sidebar_custommenuitem",
+      "label": "CustomMenuItem()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L185"
+    },
+    {
+      "id": "sidebar_sidebarmenuitems",
+      "label": "SidebarMenuItems()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L214"
+    },
+    {
+      "id": "sidebar_feedmenuitem",
+      "label": "FeedMenuItem()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L250"
+    },
+    {
+      "id": "sidebar_feedmenugroup",
+      "label": "FeedMenuGroup()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L335"
+    },
+    {
+      "id": "sidebar_categorygroup",
+      "label": "CategoryGroup()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L381"
+    },
+    {
+      "id": "sidebar_readfileastext",
+      "label": "readFileAsText()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L444"
+    },
+    {
+      "id": "sidebar_downloadfile",
+      "label": "downloadFile()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L452"
+    },
+    {
+      "id": "sidebar_moreoptionsdropdown",
+      "label": "MoreOptionsDropdown()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L464"
+    },
+    {
+      "id": "sidebar_updateallentriesasread",
+      "label": "updateAllEntriesAsRead()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L578"
+    },
+    {
+      "id": "sidebar_sidebar",
+      "label": "Sidebar()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L582"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "classnames",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "simplebar_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "virtua",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "src_components_sidebar_addfeed_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "src_components_sidebar_profile_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "categories",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "editcategorymodal",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "editfeedmodal",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "feedicon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "useappdata",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "usecategoryoperations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "usefeedoperations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "usescreenwidth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebarstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "src_components_sidebar_sidebar_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_categorytitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_countdisplay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_custommenuitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_sidebarmenuitems",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_feedmenuitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_feedmenugroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L335",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_categorygroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L381",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_readfileastext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L444",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_downloadfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L452",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_moreoptionsdropdown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L464",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_updateallentriesasread",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L578",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_sidebar_jsx",
+      "target": "sidebar_sidebar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L582",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "reduce",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "useScreenWidth",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L80"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "useNavigate",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L83"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L114"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L126"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "classNames",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L140"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "startsWith",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "sidebar_categorytitle",
+      "callee": "startsWith",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L144"
+    },
+    {
+      "caller_nid": "sidebar_custommenuitem",
+      "callee": "useLocation",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L186"
+    },
+    {
+      "caller_nid": "sidebar_custommenuitem",
+      "callee": "useNavigate",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L187"
+    },
+    {
+      "caller_nid": "sidebar_custommenuitem",
+      "callee": "startsWith",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L188"
+    },
+    {
+      "caller_nid": "sidebar_custommenuitem",
+      "callee": "classNames",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L198"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L215"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L216"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L217"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L218"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L225"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L231"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L237"
+    },
+    {
+      "caller_nid": "sidebar_sidebarmenuitems",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L243"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L251"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L252"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "useScreenWidth",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L254"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "useNavigate",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L256"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "useLocation",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L257"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "startsWith",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L259"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L269"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L276"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L283"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L293"
+    },
+    {
+      "caller_nid": "sidebar_feedmenuitem",
+      "callee": "classNames",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L303"
+    },
+    {
+      "caller_nid": "sidebar_feedmenugroup",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L342"
+    },
+    {
+      "caller_nid": "sidebar_feedmenugroup",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L343"
+    },
+    {
+      "caller_nid": "sidebar_feedmenugroup",
+      "callee": "useRef",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L345"
+    },
+    {
+      "caller_nid": "sidebar_feedmenugroup",
+      "callee": "useRef",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L346"
+    },
+    {
+      "caller_nid": "sidebar_feedmenugroup",
+      "callee": "useMemo",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L348"
+    },
+    {
+      "caller_nid": "sidebar_feedmenugroup",
+      "callee": "map",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L366"
+    },
+    {
+      "caller_nid": "sidebar_categorygroup",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L391"
+    },
+    {
+      "caller_nid": "sidebar_categorygroup",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L392"
+    },
+    {
+      "caller_nid": "sidebar_categorygroup",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L393"
+    },
+    {
+      "caller_nid": "sidebar_categorygroup",
+      "callee": "useLocation",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L395"
+    },
+    {
+      "caller_nid": "sidebar_categorygroup",
+      "callee": "map",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L398"
+    },
+    {
+      "caller_nid": "sidebar_categorygroup",
+      "callee": "filter",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L398"
+    },
+    {
+      "caller_nid": "sidebar_readfileastext",
+      "callee": "text",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L446"
+    },
+    {
+      "caller_nid": "sidebar_downloadfile",
+      "callee": "createObjectURL",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L454"
+    },
+    {
+      "caller_nid": "sidebar_downloadfile",
+      "callee": "createElement",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L455"
+    },
+    {
+      "caller_nid": "sidebar_downloadfile",
+      "callee": "append",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L458"
+    },
+    {
+      "caller_nid": "sidebar_downloadfile",
+      "callee": "click",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L459"
+    },
+    {
+      "caller_nid": "sidebar_downloadfile",
+      "callee": "remove",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L460"
+    },
+    {
+      "caller_nid": "sidebar_downloadfile",
+      "callee": "revokeObjectURL",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L461"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L465"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L466"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "useAppData",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L468"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L535"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L536"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L545"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L546"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L551"
+    },
+    {
+      "caller_nid": "sidebar_moreoptionsdropdown",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L555"
+    },
+    {
+      "caller_nid": "sidebar_updateallentriesasread",
+      "callee": "setEntries",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L579"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L583"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L584"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L585"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useState",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L587"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useState",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L588"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useState",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L589"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useState",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L590"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useForm",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L591"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useForm",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L592"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useFeedOperations",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L594"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useCategoryOperations",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L595"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useLocation",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L597"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useMemo",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L599"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useAppData",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L601"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L602"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L697"
+    },
+    {
+      "caller_nid": "sidebar_sidebar",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Sidebar.jsx",
+      "source_location": "L708"
+    }
+  ]
+}

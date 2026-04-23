@@ -1,0 +1,299 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_searchandsortbar_jsx",
+      "label": "SearchAndSortBar.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "searchandsortbar_activebutton",
+      "label": "ActiveButton()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L122"
+    },
+    {
+      "id": "searchandsortbar_searchandsortbar",
+      "label": "SearchAndSortBar()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L136"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "src_components_article_sidebartrigger_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "customtooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "usescreenwidth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "src_components_article_searchandsortbar_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "searchandsortbar_activebutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_searchandsortbar_jsx",
+      "target": "searchandsortbar_searchandsortbar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L136",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L138"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L140"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useParams",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L145"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useScreenWidth",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L146"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L149"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L150"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "useMemo",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L152"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L230"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L241"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L244"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L249"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L267"
+    },
+    {
+      "caller_nid": "searchandsortbar_searchandsortbar",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\SearchAndSortBar.jsx",
+      "source_location": "L268"
+    }
+  ]
+}

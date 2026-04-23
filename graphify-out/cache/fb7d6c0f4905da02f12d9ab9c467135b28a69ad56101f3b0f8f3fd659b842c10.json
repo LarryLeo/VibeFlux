@@ -1,0 +1,297 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_kmp_js",
+      "label": "kmp.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "kmp_computelpsarray",
+      "label": "computeLPSArray()",
+      "file_type": "code",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "kmp_kmpsearch",
+      "label": "kmpSearch()",
+      "file_type": "code",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L22"
+    },
+    {
+      "id": "kmp_parsequery",
+      "label": "parseQuery()",
+      "file_type": "code",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L53"
+    },
+    {
+      "id": "kmp_filterdata",
+      "label": "filterData()",
+      "file_type": "code",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L107"
+    },
+    {
+      "id": "kmp_filterbyquery",
+      "label": "filterByQuery()",
+      "file_type": "code",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L137"
+    },
+    {
+      "id": "kmp_extractbasicsearchterms",
+      "label": "extractBasicSearchTerms()",
+      "file_type": "code",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L159"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_kmp_js",
+      "target": "kmp_computelpsarray",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_kmp_js",
+      "target": "kmp_kmpsearch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_kmp_js",
+      "target": "kmp_parsequery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_kmp_js",
+      "target": "kmp_filterdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_kmp_js",
+      "target": "kmp_filterbyquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_kmp_js",
+      "target": "kmp_extractbasicsearchterms",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "kmp_kmpsearch",
+      "target": "kmp_computelpsarray",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "kmp_filterdata",
+      "target": "kmp_parsequery",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "kmp_filterbyquery",
+      "target": "kmp_filterdata",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "kmp_extractbasicsearchterms",
+      "target": "kmp_parsequery",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L164",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "kmp_computelpsarray",
+      "callee": "fill",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L2"
+    },
+    {
+      "caller_nid": "kmp_computelpsarray",
+      "callee": "from",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L2"
+    },
+    {
+      "caller_nid": "kmp_kmpsearch",
+      "callee": "toLowerCase",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "kmp_kmpsearch",
+      "callee": "toLowerCase",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "match",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "map",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "replaceAll",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L87"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "split",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "replace",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "startsWith",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L94"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "push",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "startsWith",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "push",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L97"
+    },
+    {
+      "caller_nid": "kmp_parsequery",
+      "callee": "push",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "kmp_filterdata",
+      "callee": "filter",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "kmp_filterbyquery",
+      "callee": "isArray",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L138"
+    },
+    {
+      "caller_nid": "kmp_filterbyquery",
+      "callee": "error",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "kmp_filterbyquery",
+      "callee": "isArray",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "kmp_filterbyquery",
+      "callee": "isArray",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "kmp_filterbyquery",
+      "callee": "trim",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L147"
+    },
+    {
+      "caller_nid": "kmp_filterbyquery",
+      "callee": "error",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "kmp_filterbyquery",
+      "callee": "trim",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L151"
+    },
+    {
+      "caller_nid": "kmp_extractbasicsearchterms",
+      "callee": "trim",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L160"
+    },
+    {
+      "caller_nid": "kmp_extractbasicsearchterms",
+      "callee": "trim",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L168"
+    },
+    {
+      "caller_nid": "kmp_extractbasicsearchterms",
+      "callee": "join",
+      "source_file": "src\\utils\\kmp.js",
+      "source_location": "L168"
+    }
+  ]
+}

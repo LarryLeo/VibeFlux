@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_history_jsx",
+      "label": "History.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "history_getentries",
+      "label": "getEntries()",
+      "file_type": "code",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "history_history",
+      "label": "History()",
+      "file_type": "code",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L6"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_history_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_history_jsx",
+      "target": "content",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_history_jsx",
+      "target": "history_getentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_history_jsx",
+      "target": "history_history",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "history_getentries",
+      "callee": "getHistoryEntries",
+      "source_file": "src\\pages\\History.jsx",
+      "source_location": "L4"
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_content_content_jsx",
+      "label": "Content.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "content_isinhorizontalscrollable",
+      "label": "isInHorizontalScrollable()",
+      "file_type": "code",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L38"
+    },
+    {
+      "id": "content_content",
+      "label": "Content()",
+      "file_type": "code",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L50"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "framer_motion",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "react_swipeable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "src_components_content_footerpanel",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "actionbuttons",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "articledetail",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "articlelist",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "searchandsortbar",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "fadetransition",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "useappdata",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "usearticlelist",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "usecontentcontext",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "usecontenthotkeys",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "usedocumenttitle",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "usekeyhandlers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "usescreenwidth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "hotkeysstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "src_components_content_content_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "content_isinhorizontalscrollable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_content_content_jsx",
+      "target": "content_content",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L50",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "content_isinhorizontalscrollable",
+      "callee": "getComputedStyle",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useStore",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useStore",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useStore",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useStore",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useStore",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useState",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useState",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useRef",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useLocation",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useParams",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useDocumentTitle",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useContentContext",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useKeyHandlers",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useAppData",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useArticleList",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useScreenWidth",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useContentHotkeys",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useCallback",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L117"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useCallback",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useSwipeable",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L187"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L200"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L207"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L211"
+    },
+    {
+      "caller_nid": "content_content",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Content\\Content.jsx",
+      "source_location": "L220"
+    }
+  ]
+}

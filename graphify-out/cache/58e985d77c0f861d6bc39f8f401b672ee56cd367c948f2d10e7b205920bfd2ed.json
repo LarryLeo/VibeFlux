@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_images_js",
+      "label": "images.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "images_extractimagesources",
+      "label": "extractImageSources()",
+      "file_type": "code",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "images_getweibofirstimage",
+      "label": "getWeiboFirstImage()",
+      "file_type": "code",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "images_findmediaenclosure",
+      "label": "findMediaEnclosure()",
+      "file_type": "code",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "images_findimageenclosure",
+      "label": "findImageEnclosure()",
+      "file_type": "code",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "images_parsecoverimage",
+      "label": "parseCoverImage()",
+      "file_type": "code",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L31"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_images_js",
+      "target": "images_extractimagesources",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_images_js",
+      "target": "images_getweibofirstimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_images_js",
+      "target": "images_findmediaenclosure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_images_js",
+      "target": "images_findimageenclosure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_images_js",
+      "target": "images_parsecoverimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "images_parsecoverimage",
+      "target": "images_getweibofirstimage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "images_parsecoverimage",
+      "target": "images_findmediaenclosure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "images_parsecoverimage",
+      "target": "images_findimageenclosure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L56",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "images_extractimagesources",
+      "callee": "parseFromString",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L2"
+    },
+    {
+      "caller_nid": "images_extractimagesources",
+      "callee": "querySelectorAll",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L3"
+    },
+    {
+      "caller_nid": "images_extractimagesources",
+      "callee": "map",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L4"
+    },
+    {
+      "caller_nid": "images_getweibofirstimage",
+      "callee": "querySelectorAll",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "images_getweibofirstimage",
+      "callee": "filter",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "images_findmediaenclosure",
+      "callee": "find",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "images_findimageenclosure",
+      "callee": "find",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "parseFromString",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "test",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "querySelector",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "getAttribute",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "querySelector",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "getAttribute",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "querySelector",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "split",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "images_parsecoverimage",
+      "callee": "getAttribute",
+      "source_file": "src\\utils\\images.js",
+      "source_location": "L65"
+    }
+  ]
+}

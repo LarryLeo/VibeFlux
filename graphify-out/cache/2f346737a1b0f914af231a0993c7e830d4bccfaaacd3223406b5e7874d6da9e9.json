@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "default-feed-icon_default_feed_icon",
+      "label": "Default Feed Icon",
+      "file_type": "image",
+      "source_file": "public\\default-feed-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "default-feed-icon_rss_feed",
+      "label": "RSS Feed",
+      "file_type": "image",
+      "source_file": "public\\default-feed-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "default-feed-icon_default_feed_icon",
+      "target": "default-feed-icon_rss_feed",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public\\default-feed-icon.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

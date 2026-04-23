@@ -1,0 +1,262 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_ui_plyrplayer_jsx",
+      "label": "PlyrPlayer.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "plyrplayer_getmimetype",
+      "label": "getMimeType()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L43"
+    },
+    {
+      "id": "plyrplayer_getmediatype",
+      "label": "getMediaType()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L56"
+    },
+    {
+      "id": "plyrplayer_inithls",
+      "label": "initHls()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L72"
+    },
+    {
+      "id": "plyrplayer_plyrplayer",
+      "label": "PlyrPlayer()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L93"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "plyr_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "src_components_ui_plyrplayer_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "plyrplayer_getmimetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "plyrplayer_getmediatype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "plyrplayer_inithls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_plyrplayer_jsx",
+      "target": "plyrplayer_plyrplayer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "plyrplayer_getmediatype",
+      "target": "plyrplayer_getmimetype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L57",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "plyrplayer_getmimetype",
+      "callee": "toLowerCase",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "plyrplayer_getmimetype",
+      "callee": "pop",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "plyrplayer_getmimetype",
+      "callee": "split",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "plyrplayer_getmediatype",
+      "callee": "includes",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "plyrplayer_getmediatype",
+      "callee": "includes",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "plyrplayer_getmediatype",
+      "callee": "startsWith",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "plyrplayer_getmediatype",
+      "callee": "startsWith",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "plyrplayer_inithls",
+      "callee": "import",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "plyrplayer_inithls",
+      "callee": "isSupported",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "plyrplayer_inithls",
+      "callee": "canPlayType",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "plyrplayer_inithls",
+      "callee": "loadSource",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "plyrplayer_inithls",
+      "callee": "attachMedia",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "plyrplayer_inithls",
+      "callee": "on",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "plyrplayer_plyrplayer",
+      "callee": "useStore",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L104"
+    },
+    {
+      "caller_nid": "plyrplayer_plyrplayer",
+      "callee": "useRef",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "plyrplayer_plyrplayer",
+      "callee": "useRef",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "plyrplayer_plyrplayer",
+      "callee": "useRef",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "plyrplayer_plyrplayer",
+      "callee": "useRef",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "plyrplayer_plyrplayer",
+      "callee": "useEffect",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "plyrplayer_plyrplayer",
+      "callee": "renderMedia",
+      "source_file": "src\\components\\ui\\PlyrPlayer.jsx",
+      "source_location": "L196"
+    }
+  ]
+}
