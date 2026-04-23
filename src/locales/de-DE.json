@@ -1,8 +1,5 @@
 {
-  "app": {
-    "new_version_available": "Neue Version verfügbar",
-    "new_version_available_description": "Über die neueste Version auf GitHub informieren"
-  },
+  "app": {},
   "login": {
     "success": "Einloggen erfolgreich",
     "auth_error": "Bitte Server-Adresse und Zugangsdaten überprüfen",
