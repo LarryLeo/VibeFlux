@@ -8,7 +8,6 @@ on:
       - ".editorconfig"
       - ".github/**"
       - ".gitignore"
-      - ".husky/**"
       - ".prettierignore"
       - ".prettierrc"
       - "Caddyfile"
