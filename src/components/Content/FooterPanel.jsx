@@ -195,7 +195,7 @@ const FooterPanel = ({ info, refreshArticleList, markAllAsRead }) => {
   const renderRadioButton = (option) => {
     const isSelected = showStatus === option.value
     return (
-      <Radio value={option.value}>
+      <Radio key={option.value} value={option.value}>
         {option.icon}
         {isSelected && <span style={{ marginLeft: "4px" }}>{option.label}</span>}
       </Radio>
