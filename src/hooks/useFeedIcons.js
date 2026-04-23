@@ -10,6 +10,7 @@ const loadingIcons = new Set()
 const useFeedIcons = (id, feed = null) => {
   const auth = useStore(authState)
   const feedIcons = useStore(feedIconsState)
+  const externalIconId = feed?.icon?.external_icon_id
 
   useEffect(() => {
     if (feedIcons[id] || loadingIcons.has(id)) {
@@ -18,8 +19,8 @@ const useFeedIcons = (id, feed = null) => {
 
     loadingIcons.add(id)
 
-    if (feed?.icon?.external_icon_id) {
-      const iconURL = `${auth.server}/feed/icon/${feed.icon.external_icon_id}`
+    if (externalIconId) {
+      const iconURL = `${auth.server}/feed/icon/${externalIconId}`
 
       feedIconsState.setKey(id, { ...defaultIcon, url: iconURL })
       loadingIcons.delete(id)
@@ -39,7 +40,7 @@ const useFeedIcons = (id, feed = null) => {
     return () => {
       loadingIcons.delete(id)
     }
-  }, [id])
+  }, [auth.server, externalIconId, feedIcons, id])
 
   return feedIcons[id]
 }

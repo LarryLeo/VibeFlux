@@ -95,6 +95,8 @@
     "open_link_externally_tooltip": "在新页面打开源网页",
     "star_tooltip": "收藏",
     "unstar_tooltip": "取消收藏",
+    "ai_summary_tooltip": "生成 AI 摘要",
+    "ai_summary_label": "AI 摘要",
     "fetch_original_tooltip": "获取原文",
     "save_to_third_party_services_tooltip": "保存到第三方服务",
     "share_tooltip": "分享",

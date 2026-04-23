@@ -21,6 +21,17 @@
   background-color: var(--color-bg-1);
 }
 
+.action-buttons .ai-summary-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+.ai-summary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .action-buttons.mobile {
   padding-left: 30px;
   padding-right: 30px;

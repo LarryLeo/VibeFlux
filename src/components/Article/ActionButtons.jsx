@@ -37,6 +37,8 @@ import { dataState } from "@/store/dataState"
 import { settingsState, updateSettings } from "@/store/settingsState"
 import "./ActionButtons.css"
 
+const openAiFillIcon = new URL("../../assets/icons/openai-fill.svg", import.meta.url).href
+
 const DesktopButtons = memo(
   ({ commonButtons, hasIntegrations, handleSaveToThirdPartyServices, polyglot }) => (
     <>
@@ -48,6 +50,7 @@ const DesktopButtons = memo(
       <div className="right-side">
         {commonButtons.status}
         {commonButtons.star}
+        {commonButtons.summary}
         {commonButtons.fetch}
         {commonButtons.toc}
         {hasIntegrations && (
@@ -69,6 +72,7 @@ const MobileButtons = memo(({ commonButtons, hasHeadings }) => (
   <div className="mobile-buttons">
     {commonButtons.status}
     {commonButtons.star}
+    {commonButtons.summary}
     {commonButtons.prev}
     {commonButtons.close}
     {commonButtons.next}
@@ -79,7 +83,7 @@ const MobileButtons = memo(({ commonButtons, hasHeadings }) => (
 ))
 MobileButtons.displayName = "MobileButtons"
 
-const ActionButtons = () => {
+const ActionButtons = ({ onGenerateAiSummary }) => {
   const { activeContent } = useStore(contentState)
   const { hasIntegrations } = useStore(dataState)
   const { polyglot } = useStore(polyglotState)
@@ -224,6 +228,16 @@ const ActionButtons = () => {
           icon={isStarred ? <IconStarFill style={{ color: "#ffcd00" }} /> : <IconStar />}
           shape="circle"
           onClick={() => handleToggleStarred(activeContent)}
+        />
+      </CustomTooltip>
+    ),
+    summary: (
+      <CustomTooltip mini content={polyglot.t("article_card.ai_summary_tooltip")}>
+        <Button
+          className="ai-summary-button"
+          icon={<img alt="" className="ai-summary-icon" src={openAiFillIcon} />}
+          shape="circle"
+          onClick={onGenerateAiSummary}
         />
       </CustomTooltip>
     ),

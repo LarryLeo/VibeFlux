@@ -32,6 +32,7 @@ import {
 import { dataState } from "@/store/dataState"
 import { duplicateHotkeysState } from "@/store/hotkeysState"
 import { settingsState } from "@/store/settingsState"
+import generateArticleSummary from "@/utils/article-summary"
 
 import "./Content.css"
 
@@ -48,6 +49,7 @@ const isInHorizontalScrollable = (element) => {
 }
 
 const Content = ({ info, getEntries, markAllAsRead }) => {
+  const { id: infoId, from: infoFrom } = info
   const { activeContent, entries, filterDate, filterString, isArticleLoading } =
     useStore(contentState)
   const { isAppDataReady } = useStore(dataState)
@@ -56,12 +58,13 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
   const { polyglot } = useStore(polyglotState)
   const duplicateHotkeys = useStore(duplicateHotkeysState)
 
+  const [aiSummary, setAiSummary] = useState(null)
   const [isSwipingLeft, setIsSwipingLeft] = useState(false)
   const [isSwipingRight, setIsSwipingRight] = useState(false)
   const cardsRef = useRef(null)
 
   const location = useLocation()
-  const params = useParams()
+  const { entryId } = useParams()
 
   useDocumentTitle()
 
@@ -73,34 +76,45 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
   const { fetchArticleList } = useArticleList(info, getEntries)
   const { isBelowMedium } = useScreenWidth()
 
-  const fetchArticleListOnly = async () => {
-    await (isAppDataReady ? fetchArticleList(getEntries) : fetchAppData())
-  }
+  const fetchArticleListOnly = useCallback(async () => {
+    await (isAppDataReady ? fetchArticleList() : fetchAppData())
+  }, [fetchAppData, fetchArticleList, isAppDataReady])
 
-  const fetchArticleListWithRelatedData = async () => {
+  const fetchArticleListWithRelatedData = useCallback(async () => {
     await (isAppDataReady
-      ? Promise.all([fetchArticleList(getEntries), fetchFeedRelatedData()])
+      ? Promise.all([fetchArticleList(), fetchFeedRelatedData()])
       : fetchAppData())
-  }
+  }, [fetchAppData, fetchArticleList, fetchFeedRelatedData, isAppDataReady])
 
-  const fetchSingleEntry = async (entryId) => {
-    const existingEntry = entries.find((entry) => entry.id === Number(entryId))
+  const fetchSingleEntry = useCallback(
+    async (entryId) => {
+      const existingEntry = entries.find((entry) => entry.id === Number(entryId))
 
-    if (existingEntry) {
-      setActiveContent(existingEntry)
+      if (existingEntry) {
+        setActiveContent(existingEntry)
+        return
+      }
+
+      try {
+        setIsArticleLoading(true)
+        const entry = await getEntry(entryId)
+        setActiveContent(entry)
+      } catch (error) {
+        console.error("Failed to fetch entry:", error)
+      } finally {
+        setIsArticleLoading(false)
+      }
+    },
+    [entries],
+  )
+
+  const handleGenerateAiSummary = useCallback(() => {
+    if (!activeContent) {
       return
     }
 
-    try {
-      setIsArticleLoading(true)
-      const entry = await getEntry(entryId)
-      setActiveContent(entry)
-    } catch (error) {
-      console.error("Failed to fetch entry:", error)
-    } finally {
-      setIsArticleLoading(false)
-    }
-  }
+    setAiSummary(generateArticleSummary(activeContent))
+  }, [activeContent])
 
   useContentHotkeys({ handleRefreshArticleList: fetchArticleListWithRelatedData })
 
@@ -185,40 +199,40 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
   }, [duplicateHotkeys, polyglot, showHotkeysSettings])
 
   useEffect(() => {
-    setInfoFrom(info.from)
-    setInfoId(info.id)
+    setInfoFrom(infoFrom)
+    setInfoId(infoId)
     if (activeContent) {
       setActiveContent(null)
     }
-    if (info.from === "category") {
+    if (infoFrom === "category") {
       fetchArticleListWithRelatedData()
     } else {
       fetchArticleListOnly()
     }
-  }, [info])
+  }, [activeContent, fetchArticleListOnly, fetchArticleListWithRelatedData, infoFrom, infoId])
 
   useEffect(() => {
-    if (["starred", "history"].includes(info.from)) {
+    if (["starred", "history"].includes(infoFrom)) {
       return
     }
     fetchArticleListOnly()
-  }, [orderBy])
+  }, [fetchArticleListOnly, infoFrom, orderBy])
 
   useEffect(() => {
     fetchArticleListOnly()
-  }, [filterDate, filterString, orderDirection, showStatus])
+  }, [fetchArticleListOnly, filterDate, filterString, orderDirection, showStatus])
 
   useEffect(() => {
-    if (isBelowMedium && activeContent) {
-      const { entryId } = params
-      if (!entryId) {
-        setActiveContent(null)
-      }
+    if (isBelowMedium && activeContent && !entryId) {
+      setActiveContent(null)
     }
-  }, [location.pathname])
+  }, [activeContent, entryId, isBelowMedium, location.pathname])
 
   useEffect(() => {
-    const { entryId } = params
+    setAiSummary(null)
+  }, [activeContent?.id])
+
+  useEffect(() => {
     if (entryId) {
       if (!activeContent || activeContent.id !== Number(entryId)) {
         fetchSingleEntry(entryId)
@@ -226,7 +240,7 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
     } else if (activeContent) {
       setActiveContent(null)
     }
-  }, [params])
+  }, [activeContent, entryId, fetchSingleEntry])
 
   return (
     <>
@@ -251,7 +265,7 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
       </div>
       {activeContent ? (
         <div className="article-container content-wrapper" {...handlers}>
-          {!isBelowMedium && <ActionButtons />}
+          {!isBelowMedium && <ActionButtons onGenerateAiSummary={handleGenerateAiSummary} />}
           {isArticleLoading ? (
             <div style={{ flex: 1 }} />
           ) : (
@@ -268,10 +282,10 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
                   </FadeTransition>
                 )}
               </AnimatePresence>
-              <ArticleDetail ref={entryDetailRef} />
+              <ArticleDetail ref={entryDetailRef} aiSummary={aiSummary} />
             </>
           )}
-          {isBelowMedium && <ActionButtons />}
+          {isBelowMedium && <ActionButtons onGenerateAiSummary={handleGenerateAiSummary} />}
         </div>
       ) : (
         <div className="content-empty content-wrapper">

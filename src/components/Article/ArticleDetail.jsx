@@ -19,6 +19,7 @@ import ImageOverlayButton from "./ImageOverlayButton"
 import CustomLink from "@/components/ui/CustomLink"
 import FadeTransition from "@/components/ui/FadeTransition"
 import PlyrPlayer from "@/components/ui/PlyrPlayer"
+import { polyglotState } from "@/hooks/useLanguage"
 import usePhotoSlider from "@/hooks/usePhotoSlider"
 import useScreenWidth from "@/hooks/useScreenWidth"
 import {
@@ -329,11 +330,12 @@ const getHtmlParserOptions = (imageSources, togglePhotoSlider) => {
   return options
 }
 
-const ArticleDetail = forwardRef((_, ref) => {
+const ArticleDetail = forwardRef(({ aiSummary }, ref) => {
   const navigate = useNavigate()
   const { isBelowMedium } = useScreenWidth()
 
   const { activeContent } = useStore(contentState)
+  const { polyglot } = useStore(polyglotState)
   const {
     articleWidth,
     edgeToEdgeImages,
@@ -446,6 +448,18 @@ const ArticleDetail = forwardRef((_, ref) => {
               {generateReadingTime(activeContent.reading_time)}
             </Typography.Text>
             <Divider />
+            {aiSummary?.length > 0 && (
+              <div className="article-summary" style={{ maxWidth: getResponsiveMaxWidth() }}>
+                <div className="article-summary-label">
+                  {polyglot.t("article_card.ai_summary_label")}
+                </div>
+                <ul className="article-summary-list">
+                  {aiSummary.map((item, index) => (
+                    <li key={`${activeContent.id}-summary-${index}`}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
           <div
             key={activeContent.id}

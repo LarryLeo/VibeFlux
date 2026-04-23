@@ -137,7 +137,7 @@ const ArticleCard = ({ entry, handleEntryClick, children }) => {
         observer.unobserve(element)
       }
     }
-  }, [entry, markReadOnScroll, infoFrom, isUnread, isImageLoaded, isWideImage])
+  }, [entry, handleToggleStatus, infoFrom, isImageLoaded, isUnread, isWideImage, markReadOnScroll])
 
   useEffect(() => {
     let isSubscribed = true

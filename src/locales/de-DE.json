@@ -95,6 +95,8 @@
     "open_link_externally_tooltip": "Quelllink in neuer Seite öffnen",
     "star_tooltip": "Lesezeichen hinzufügen",
     "unstar_tooltip": "Lesezeichen entfernen",
+    "ai_summary_tooltip": "KI-Zusammenfassung erstellen",
+    "ai_summary_label": "KI-Zusammenfassung",
     "fetch_original_tooltip": "Originalinhalt herunterladen",
     "save_to_third_party_services_tooltip": "Bei Drittanbieter speichern",
     "share_tooltip": "Teilen",
