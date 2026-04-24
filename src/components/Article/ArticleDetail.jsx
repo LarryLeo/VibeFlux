@@ -330,7 +330,7 @@ const getHtmlParserOptions = (imageSources, togglePhotoSlider) => {
   return options
 }
 
-const ArticleDetail = forwardRef(({ aiSummary }, ref) => {
+const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
   const navigate = useNavigate()
   const { isBelowMedium } = useScreenWidth()
 
@@ -448,16 +448,22 @@ const ArticleDetail = forwardRef(({ aiSummary }, ref) => {
               {generateReadingTime(activeContent.reading_time)}
             </Typography.Text>
             <Divider />
-            {aiSummary?.length > 0 && (
+            {(isAiSummaryLoading || aiSummary?.length > 0) && (
               <div className="article-summary" style={{ maxWidth: getResponsiveMaxWidth() }}>
                 <div className="article-summary-label">
                   {polyglot.t("article_card.ai_summary_label")}
                 </div>
-                <ul className="article-summary-list">
-                  {aiSummary.map((item, index) => (
-                    <li key={`${activeContent.id}-summary-${index}`}>{item}</li>
-                  ))}
-                </ul>
+                {isAiSummaryLoading ? (
+                  <Typography.Paragraph className="article-summary-loading" type="secondary">
+                    {polyglot.t("article_card.ai_summary_loading_message")}
+                  </Typography.Paragraph>
+                ) : (
+                  <ul className="article-summary-list">
+                    {aiSummary.map((item, index) => (
+                      <li key={`${activeContent.id}-summary-${index}`}>{item}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             )}
           </div>

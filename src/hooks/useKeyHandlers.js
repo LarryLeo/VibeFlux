@@ -134,6 +134,11 @@ const useKeyHandlers = () => {
     setSettingsModalVisible(true)
   }
 
+  const showAiSettings = () => {
+    setSettingsTabsActiveTab("6")
+    setSettingsModalVisible(true)
+  }
+
   const toggleReadStatus = withActiveContent((handleUpdateEntry) => {
     handleUpdateEntry()
   })
@@ -167,6 +172,7 @@ const useKeyHandlers = () => {
     openLinkExternally,
     openPhotoSlider,
     saveToThirdPartyServices,
+    showAiSettings,
     showHotkeysSettings,
     toggleReadStatus,
     toggleStarStatus,

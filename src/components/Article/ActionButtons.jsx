@@ -83,7 +83,7 @@ const MobileButtons = memo(({ commonButtons, hasHeadings }) => (
 ))
 MobileButtons.displayName = "MobileButtons"
 
-const ActionButtons = ({ onGenerateAiSummary }) => {
+const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
   const { activeContent } = useStore(contentState)
   const { hasIntegrations } = useStore(dataState)
   const { polyglot } = useStore(polyglotState)
@@ -232,10 +232,18 @@ const ActionButtons = ({ onGenerateAiSummary }) => {
       </CustomTooltip>
     ),
     summary: (
-      <CustomTooltip mini content={polyglot.t("article_card.ai_summary_tooltip")}>
+      <CustomTooltip
+        mini
+        content={
+          isAiSummaryLoading
+            ? polyglot.t("article_card.ai_summary_loading_tooltip")
+            : polyglot.t("article_card.ai_summary_tooltip")
+        }
+      >
         <Button
           className="ai-summary-button"
           icon={<img alt="" className="ai-summary-icon" src={openAiFillIcon} />}
+          loading={isAiSummaryLoading}
           shape="circle"
           onClick={onGenerateAiSummary}
         />

@@ -9,6 +9,7 @@ import {
 import { useStore } from "@nanostores/react"
 import SimpleBar from "simplebar-react"
 
+import AiSettings from "./AiSettings"
 import Appearance from "./Appearance"
 import CategoryList from "./CategoryList"
 import FeedList from "./FeedList"
@@ -96,6 +97,17 @@ const SettingsTabs = ({ activeTab, onTabChange }) => {
           }
         >
           <Appearance />
+        </Tabs.TabPane>
+        <Tabs.TabPane
+          key="6"
+          title={
+            <CustomTabTitle
+              icon={<span style={{ fontSize: "16px", fontWeight: 700 }}>AI</span>}
+              title={polyglot.t("settings.ai")}
+            />
+          }
+        >
+          <AiSettings />
         </Tabs.TabPane>
         {!isBelowMedium && (
           <Tabs.TabPane

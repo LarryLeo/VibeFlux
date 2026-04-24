@@ -1,4 +1,4 @@
-import { Button, Notification, Typography } from "@arco-design/web-react"
+import { Button, Message, Notification, Typography } from "@arco-design/web-react"
 import { IconEmpty, IconLeft, IconRight } from "@arco-design/web-react/icon"
 import { useStore } from "@nanostores/react"
 import { AnimatePresence } from "framer-motion"
@@ -9,6 +9,7 @@ import { useSwipeable } from "react-swipeable"
 import FooterPanel from "./FooterPanel"
 
 import { getEntry } from "@/apis"
+import { generateArticleSummary, hasAiSummaryConfig } from "@/apis/openai"
 import ActionButtons from "@/components/Article/ActionButtons"
 import ArticleDetail from "@/components/Article/ArticleDetail"
 import ArticleList from "@/components/Article/ArticleList"
@@ -32,7 +33,6 @@ import {
 import { dataState } from "@/store/dataState"
 import { duplicateHotkeysState } from "@/store/hotkeysState"
 import { settingsState } from "@/store/settingsState"
-import generateArticleSummary from "@/utils/article-summary"
 
 import "./Content.css"
 
@@ -59,8 +59,10 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
   const duplicateHotkeys = useStore(duplicateHotkeysState)
 
   const [aiSummary, setAiSummary] = useState(null)
+  const [isAiSummaryLoading, setIsAiSummaryLoading] = useState(false)
   const [isSwipingLeft, setIsSwipingLeft] = useState(false)
   const [isSwipingRight, setIsSwipingRight] = useState(false)
+  const aiSummaryRequestIdRef = useRef(0)
   const cardsRef = useRef(null)
 
   const location = useLocation()
@@ -70,7 +72,8 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
 
   const { entryDetailRef, entryListRef, handleEntryClick } = useContentContext()
 
-  const { navigateToNextArticle, navigateToPreviousArticle, showHotkeysSettings } = useKeyHandlers()
+  const { navigateToNextArticle, navigateToPreviousArticle, showAiSettings, showHotkeysSettings } =
+    useKeyHandlers()
 
   const { fetchAppData, fetchFeedRelatedData } = useAppData()
   const { fetchArticleList } = useArticleList(info, getEntries)
@@ -108,13 +111,58 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
     [entries],
   )
 
-  const handleGenerateAiSummary = useCallback(() => {
+  const handleGenerateAiSummary = useCallback(async () => {
     if (!activeContent) {
       return
     }
 
-    setAiSummary(generateArticleSummary(activeContent))
-  }, [activeContent])
+    if (isAiSummaryLoading) {
+      return
+    }
+
+    if (!hasAiSummaryConfig()) {
+      Message.warning(polyglot.t("article_card.ai_summary_missing_config"))
+      showAiSettings()
+      return
+    }
+
+    const id = `generate-ai-summary-${activeContent.id}`
+    const currentRequestId = aiSummaryRequestIdRef.current + 1
+    aiSummaryRequestIdRef.current = currentRequestId
+
+    try {
+      setIsAiSummaryLoading(true)
+      setAiSummary(null)
+      Message.loading({
+        id,
+        duration: 0,
+        content: polyglot.t("article_card.ai_summary_loading_message"),
+      })
+
+      const summary = await generateArticleSummary(activeContent)
+
+      if (aiSummaryRequestIdRef.current !== currentRequestId) {
+        return
+      }
+
+      setAiSummary(summary)
+      Message.success({ id, content: polyglot.t("article_card.ai_summary_success_message") })
+    } catch (error) {
+      if (aiSummaryRequestIdRef.current !== currentRequestId) {
+        return
+      }
+
+      console.error("Failed to generate AI summary:", error)
+      Message.error({
+        id,
+        content: polyglot.t("article_card.ai_summary_error", {
+          message: error?.message ?? polyglot.t("article_card.ai_summary_error_unknown"),
+        }),
+      })
+    } finally {
+      setIsAiSummaryLoading(false)
+    }
+  }, [activeContent, isAiSummaryLoading, polyglot, showAiSettings])
 
   useContentHotkeys({ handleRefreshArticleList: fetchArticleListWithRelatedData })
 
@@ -237,7 +285,9 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
   }, [activeContent, entryId, isBelowMedium, location.pathname])
 
   useEffect(() => {
+    aiSummaryRequestIdRef.current += 1
     setAiSummary(null)
+    setIsAiSummaryLoading(false)
   }, [activeContent?.id])
 
   useEffect(() => {
@@ -273,7 +323,12 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
       </div>
       {activeContent ? (
         <div className="article-container content-wrapper" {...handlers}>
-          {!isBelowMedium && <ActionButtons onGenerateAiSummary={handleGenerateAiSummary} />}
+          {!isBelowMedium && (
+            <ActionButtons
+              isAiSummaryLoading={isAiSummaryLoading}
+              onGenerateAiSummary={handleGenerateAiSummary}
+            />
+          )}
           {isArticleLoading ? (
             <div style={{ flex: 1 }} />
           ) : (
@@ -290,10 +345,19 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
                   </FadeTransition>
                 )}
               </AnimatePresence>
-              <ArticleDetail ref={entryDetailRef} aiSummary={aiSummary} />
+              <ArticleDetail
+                ref={entryDetailRef}
+                aiSummary={aiSummary}
+                isAiSummaryLoading={isAiSummaryLoading}
+              />
             </>
           )}
-          {isBelowMedium && <ActionButtons onGenerateAiSummary={handleGenerateAiSummary} />}
+          {isBelowMedium && (
+            <ActionButtons
+              isAiSummaryLoading={isAiSummaryLoading}
+              onGenerateAiSummary={handleGenerateAiSummary}
+            />
+          )}
         </div>
       ) : (
         <div className="content-empty content-wrapper">

@@ -111,6 +111,10 @@ p {
   color: var(--color-text-2);
 }
 
+.article-summary-loading {
+  margin: 12px 0 0;
+}
+
 .article-summary-list li {
   margin: 0.75em 0;
 }
