@@ -3,14 +3,14 @@ import {
   IconCommand,
   IconFile,
   IconFolder,
-  IconThunderbolt,
   IconSkin,
   IconStorage,
+  IconThunderbolt,
 } from "@arco-design/web-react/icon"
 import { useStore } from "@nanostores/react"
 import SimpleBar from "simplebar-react"
 
-import AiSettings from "./AiSettings"
+import AiSettings from "./AISettings"
 import Appearance from "./Appearance"
 import CategoryList from "./CategoryList"
 import FeedList from "./FeedList"
