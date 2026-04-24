@@ -1,6 +1,6 @@
 import { Form, Input, Message, Modal, Select, Switch } from "@arco-design/web-react"
 import { useStore } from "@nanostores/react"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Outlet, useLocation, useNavigate } from "react-router"
 
 import { addFeed } from "@/apis"
@@ -20,6 +20,7 @@ const crawlerRule = [{ type: "boolean" }]
 
 const SettingsModal = () => {
   const location = useLocation()
+  const previousPathnameRef = useRef(location.pathname)
 
   const { isBelowMedium } = useScreenWidth()
   const {
@@ -30,10 +31,20 @@ const SettingsModal = () => {
   } = useModalToggle()
 
   useEffect(() => {
-    if (isBelowMedium && settingsModalVisible) {
+    const pathnameChanged = previousPathnameRef.current !== location.pathname
+    previousPathnameRef.current = location.pathname
+
+    if (isBelowMedium && settingsModalVisible && pathnameChanged) {
       setSettingsModalVisible(false)
+      setSettingsTabsActiveTab("1")
     }
-  }, [isBelowMedium, location.pathname, setSettingsModalVisible, settingsModalVisible])
+  }, [
+    isBelowMedium,
+    location.pathname,
+    setSettingsModalVisible,
+    setSettingsTabsActiveTab,
+    settingsModalVisible,
+  ])
 
   return (
     <Modal
