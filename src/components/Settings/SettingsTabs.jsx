@@ -10,12 +10,12 @@ import {
 import { useStore } from "@nanostores/react"
 import SimpleBar from "simplebar-react"
 
-import AiSettings from "./AISettings"
 import Appearance from "./Appearance"
 import CategoryList from "./CategoryList"
 import FeedList from "./FeedList"
 import General from "./General"
 import Hotkeys from "./Hotkeys"
+import LLMSettings from "./LLMSettings"
 
 import { polyglotState } from "@/hooks/useLanguage"
 import useScreenWidth from "@/hooks/useScreenWidth"
@@ -108,7 +108,7 @@ const SettingsTabs = ({ activeTab, onTabChange }) => {
             />
           }
         >
-          <AiSettings />
+          <LLMSettings />
         </Tabs.TabPane>
         {!isBelowMedium && (
           <Tabs.TabPane

@@ -127,7 +127,12 @@ export default [
     },
   },
   {
-    files: ["src/components/Article/ArticleTOC.jsx", "src/main.jsx", "src/routes.jsx"],
+    files: [
+      "src/components/Article/ArticleTOC.jsx",
+      "src/components/Settings/LLMSettings.jsx",
+      "src/main.jsx",
+      "src/routes.jsx",
+    ],
     rules: {
       "unicorn/filename-case": "off",
     },

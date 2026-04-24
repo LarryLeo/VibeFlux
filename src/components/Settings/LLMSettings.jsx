@@ -4,9 +4,9 @@ import { useStore } from "@nanostores/react"
 import { polyglotState } from "@/hooks/useLanguage"
 import { settingsState, updateSettings } from "@/store/settingsState"
 
-import "./AiSettings.css"
+import "./LLMSettings.css"
 
-const AiSettings = () => {
+const LLMSettings = () => {
   const { openAiApiKey, openAiBaseUrl, openAiModel } = useStore(settingsState)
   const { polyglot } = useStore(polyglotState)
 
@@ -75,4 +75,4 @@ const AiSettings = () => {
   )
 }
 
-export default AiSettings
+export default LLMSettings
