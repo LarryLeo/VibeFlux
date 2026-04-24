@@ -90,37 +90,67 @@ p {
 }
 
 .article-summary {
+  position: relative;
   margin: 18px auto 8px;
-  padding: 18px 20px;
-  border: 1px solid var(--color-fill-3);
-  border-radius: var(--border-radius-large);
-  background: linear-gradient(180deg, rgba(var(--primary-6), 0.05), var(--color-fill-1));
+  padding: 16px 18px 16px 20px;
+  border: 1px solid var(--color-fill-2);
+  border-radius: var(--border-radius-medium);
+  background: var(--color-fill-1);
+  box-sizing: border-box;
+  text-align: left;
+  width: 100%;
+}
+
+.article-summary::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 0;
+  width: 3px;
+  border-radius: 999px;
+  background: rgba(var(--primary-6), 0.42);
 }
 
 .article-summary-label {
-  color: rgb(var(--primary-6));
-  font-size: 0.75rem;
-  font-weight: var(--font-weight-600);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.article-summary-list {
-  margin: 12px 0 0;
-  padding-left: 18px;
-  color: var(--color-text-2);
+  color: var(--color-text-3);
+  font-size: 0.72rem;
+  font-weight: var(--font-weight-500);
+  letter-spacing: 0.08em;
 }
 
 .article-summary-loading {
-  margin: 12px 0 0;
+  margin: 10px 0 0;
 }
 
-.article-summary-list li {
-  margin: 0.75em 0;
+.article-summary-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: left;
 }
 
-.article-summary-list li::marker {
-  color: rgb(var(--primary-6));
+.article-summary-paragraph {
+  margin: 0;
+  color: var(--color-text-2);
+  line-height: 1.9;
+  text-align: left;
+  text-indent: 2em;
+  font-size: 0.95rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
+
+.article-summary-paragraph:first-child {
+  color: var(--color-text-1);
+  font-variation-settings: "wght" 520;
+}
+
+.article-summary-paragraph:last-child {
+  color: var(--color-text-2);
+  font-style: italic;
 }
 
 .article-title.arco-typography {
@@ -184,7 +214,22 @@ p {
 
 @media screen and (max-width: 768px) {
   .article-summary {
-    padding: 16px;
+    padding: 14px 16px 14px 18px;
+  }
+
+  .article-summary::before {
+    top: 14px;
+    bottom: 14px;
+  }
+
+  .article-summary-content {
+    gap: 0.6rem;
+  }
+
+  .article-summary-paragraph {
+    line-height: 1.8;
+    text-indent: 1.5em;
+    font-size: 0.94rem;
   }
 
   .edge-to-edge .article-body .big-image {

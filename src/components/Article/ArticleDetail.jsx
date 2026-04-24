@@ -458,11 +458,16 @@ const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
                     {polyglot.t("article_card.ai_summary_loading_message")}
                   </Typography.Paragraph>
                 ) : (
-                  <ul className="article-summary-list">
+                  <div className="article-summary-content">
                     {aiSummary.map((item, index) => (
-                      <li key={`${activeContent.id}-summary-${index}`}>{item}</li>
+                      <Typography.Paragraph
+                        key={`${activeContent.id}-summary-${index}`}
+                        className="article-summary-paragraph"
+                      >
+                        {item}
+                      </Typography.Paragraph>
                     ))}
-                  </ul>
+                  </div>
                 )}
               </div>
             )}
