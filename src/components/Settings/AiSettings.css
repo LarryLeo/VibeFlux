@@ -1,0 +1,104 @@
+.ai-settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 4px 0 2px;
+}
+
+.ai-settings-tip-panel {
+  padding: 12px 14px;
+  border: 1px solid rgba(var(--primary-6), 0.16);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(var(--primary-6), 0.04), var(--color-bg-1));
+}
+
+.ai-settings-tip-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.ai-settings-tip-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(var(--primary-6), 0.12);
+  color: rgb(var(--primary-6));
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.ai-settings-tip-title {
+  margin: 0;
+  color: var(--color-text-1);
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.ai-settings-tip-subtitle {
+  margin: 4px 0 0;
+  color: var(--color-text-2);
+  line-height: 1.45;
+  font-size: 0.9rem;
+}
+
+.ai-settings-card {
+  padding: 4px 0;
+  border: 1px solid var(--color-fill-3);
+  border-radius: 16px;
+  background: var(--color-bg-1);
+  overflow: hidden;
+}
+
+.ai-settings-field {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.2fr) minmax(240px, 0.8fr);
+  gap: 16px;
+  align-items: center;
+  padding: 16px 18px;
+}
+
+.ai-settings-field-title {
+  color: var(--color-text-1);
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.ai-settings-field-description {
+  margin-top: 4px;
+  color: var(--color-text-2);
+  line-height: 1.5;
+}
+
+.ai-settings-input {
+  width: 100%;
+  margin-left: 0;
+}
+
+.ai-settings-divider {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .ai-settings-field {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-settings-tip-header {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-settings-tip-badge {
+    width: fit-content;
+    min-width: 0;
+    padding: 0 12px;
+  }
+}

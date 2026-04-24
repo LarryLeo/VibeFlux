@@ -3,6 +3,7 @@ import {
   IconCommand,
   IconFile,
   IconFolder,
+  IconThunderbolt,
   IconSkin,
   IconStorage,
 } from "@arco-design/web-react/icon"
@@ -102,7 +103,7 @@ const SettingsTabs = ({ activeTab, onTabChange }) => {
           key="6"
           title={
             <CustomTabTitle
-              icon={<span style={{ fontSize: "16px", fontWeight: 700 }}>AI</span>}
+              icon={<IconThunderbolt style={{ fontSize: "20px" }} />}
               title={polyglot.t("settings.ai")}
             />
           }
