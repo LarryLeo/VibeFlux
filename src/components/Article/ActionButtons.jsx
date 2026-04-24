@@ -22,6 +22,7 @@ import { memo, useState } from "react"
 
 import ArticleTOC from "./ArticleTOC"
 
+import OpenAiFillIcon from "@/components/Icons/OpenAiFillIcon"
 import CustomTooltip from "@/components/ui/CustomTooltip"
 import useEntryActions from "@/hooks/useEntryActions"
 import useKeyHandlers from "@/hooks/useKeyHandlers"
@@ -36,8 +37,6 @@ import {
 import { dataState } from "@/store/dataState"
 import { settingsState, updateSettings } from "@/store/settingsState"
 import "./ActionButtons.css"
-
-const openAiFillIcon = new URL("../../assets/icons/openai-fill.svg", import.meta.url).href
 
 const DesktopButtons = memo(
   ({ commonButtons, hasIntegrations, handleSaveToThirdPartyServices, polyglot }) => (
@@ -241,8 +240,7 @@ const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
         }
       >
         <Button
-          className="ai-summary-button"
-          icon={<img alt="" className="ai-summary-icon" src={openAiFillIcon} />}
+          icon={<OpenAiFillIcon style={{ fontSize: 13 }} />}
           loading={isAiSummaryLoading}
           shape="circle"
           onClick={onGenerateAiSummary}
