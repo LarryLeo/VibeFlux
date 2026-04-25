@@ -473,7 +473,11 @@ const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
                   {polyglot.t("article_card.ai_summary_label")}
                 </div>
                 {isAiSummaryLoading ? (
-                  <Typography.Paragraph className="article-summary-loading" type="secondary">
+                  <Typography.Paragraph
+                    className="article-summary-loading"
+                    style={{ fontFamily: "inherit", fontSize: "inherit", lineHeight: "inherit" }}
+                    type="secondary"
+                  >
                     {polyglot.t("article_card.ai_summary_loading_message")}
                   </Typography.Paragraph>
                 ) : (
