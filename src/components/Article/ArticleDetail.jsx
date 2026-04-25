@@ -429,6 +429,7 @@ const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
             style={{
               maxWidth: getResponsiveMaxWidth(),
               textAlign: titleAlignment,
+              fontFamily: fontFamily,
               fontSize: `${fontSize}rem`,
             }}
           >
