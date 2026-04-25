@@ -255,7 +255,7 @@
     "ai_model_description": "El nombre del modelo expuesto por tu New API, por ejemplo gpt-4.1-mini.",
     "ai_model_placeholder": "gpt-4.1-mini",
     "ai_storage_notice_label": "Aviso de almacenamiento",
-    "ai_storage_notice_description": "Esta configuración es cómoda para llamadas directas desde el navegador, pero la clave se guarda localmente.",
+    "ai_storage_notice_description": "Esta configuración solo guarda ajustes localmente en el navegador y no se sincroniza con la nube.",
     "ai_storage_notice_value": "Tu clave API se guarda localmente en este perfil del navegador. Evita usar aquí una clave de producción con privilegios elevados.",
     "duplicate_hotkeys": "Atajos de teclado duplicados detectados, por favor revise sus ajustes de atajos de teclado",
     "default_home_page_label": "Página de inicio predeterminada",

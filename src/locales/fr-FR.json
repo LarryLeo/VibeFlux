@@ -255,7 +255,7 @@
     "ai_model_description": "Le nom du modèle exposé par votre New API, par exemple gpt-4.1-mini.",
     "ai_model_placeholder": "gpt-4.1-mini",
     "ai_storage_notice_label": "Information de stockage",
-    "ai_storage_notice_description": "Cette configuration est pratique pour les appels directs depuis le navigateur, mais la clé est stockée localement.",
+    "ai_storage_notice_description": "Cette configuration n'enregistre les paramètres que localement dans le navigateur et ne se synchronise pas avec le cloud.",
     "ai_storage_notice_value": "Votre clé API est stockée localement dans ce profil de navigateur. Évitez d'utiliser ici une clé de production à privilèges élevés.",
     "duplicate_hotkeys": "Raccourcis clavier dupliqués, veuillez vérifier vos paramètres de raccourcis clavier",
     "default_home_page_label": "Page d'accueil par défaut",

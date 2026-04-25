@@ -255,7 +255,7 @@
     "ai_model_description": "Der von Ihrer New API bereitgestellte Modellname, zum Beispiel gpt-4.1-mini.",
     "ai_model_placeholder": "gpt-4.1-mini",
     "ai_storage_notice_label": "Speicherhinweis",
-    "ai_storage_notice_description": "Diese Konfiguration ist für direkte Browser-Aufrufe bequem, aber der Schlüssel wird lokal gespeichert.",
+    "ai_storage_notice_description": "Diese Konfiguration speichert Einstellungen nur lokal im Browser und synchronisiert nicht mit der Cloud.",
     "ai_storage_notice_value": "Ihr API-Schlüssel wird lokal in diesem Browser-Profil gespeichert. Verwenden Sie hier keinen Produktionsschlüssel mit weitreichenden Rechten.",
     "duplicate_hotkeys": "Doppelte Tastenkürzel gefunden, bitte Tastenkürzeleinstellungen überprüfen",
     "default_home_page_label": "Startseite",

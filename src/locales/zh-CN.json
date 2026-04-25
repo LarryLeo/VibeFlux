@@ -255,7 +255,7 @@
     "ai_model_description": "指定接口提供的模型名称，例如 gpt-4o-mini。",
     "ai_model_placeholder": "gpt-4o-mini",
     "ai_storage_notice_label": "存储说明",
-    "ai_storage_notice_description": "这种直连方式接入快，但密钥会保存在本地设置中。",
+    "ai_storage_notice_description": "这里的配置信息仅保存在本地浏览器配置中，不会同步到云端。",
     "ai_storage_notice_value": "API Key 会保存在当前浏览器配置中，请不要在这里使用高权限生产密钥。",
     "duplicate_hotkeys": "检测到重复的快捷键，请检查您的快捷键设置",
     "default_home_page_label": "默认主页",
