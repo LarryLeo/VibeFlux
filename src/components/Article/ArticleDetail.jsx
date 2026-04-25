@@ -426,7 +426,11 @@ const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
         <FadeTransition y={20}>
           <div
             className="article-header"
-            style={{ maxWidth: getResponsiveMaxWidth(), textAlign: titleAlignment }}
+            style={{
+              maxWidth: getResponsiveMaxWidth(),
+              textAlign: titleAlignment,
+              fontSize: `${fontSize}rem`,
+            }}
           >
             <Typography.Title
               className="article-title"
@@ -463,7 +467,7 @@ const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
             </Typography.Text>
             <Divider />
             {(isAiSummaryLoading || aiSummary?.length > 0) && (
-              <div className="article-summary" style={{ maxWidth: getResponsiveMaxWidth() }}>
+              <div className="article-summary">
                 <div className="article-summary-label">
                   {polyglot.t("article_card.ai_summary_label")}
                 </div>

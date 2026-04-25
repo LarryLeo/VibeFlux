@@ -240,7 +240,7 @@ const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
         }
       >
         <Button
-          icon={<OpenAiFillIcon style={{ fontSize: 13 }} />}
+          icon={<OpenAiFillIcon />}
           loading={isAiSummaryLoading}
           shape="circle"
           onClick={onGenerateAiSummary}
