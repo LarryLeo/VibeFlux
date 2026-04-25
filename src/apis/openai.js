@@ -45,6 +45,7 @@ export const generateArticleSummary = async (entry) => {
       model,
       temperature: 0.3,
       messages: buildArticleSummaryPrompt(summaryInput),
+      enable_thinking: false
     }),
   })
 
