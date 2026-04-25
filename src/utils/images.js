@@ -1,7 +1,65 @@
-export const extractImageSources = (htmlString) => {
-  const doc = new DOMParser().parseFromString(htmlString, "text/html")
+const parseHTML = (htmlString) => {
+  return new DOMParser().parseFromString(htmlString, "text/html")
+}
+
+export const extractImageSources = (htmlOrDoc) => {
+  const doc = typeof htmlOrDoc === "string" ? parseHTML(htmlOrDoc) : htmlOrDoc
   const images = doc.querySelectorAll("img")
-  return [...images].map((img) => img.getAttribute("src"))
+  return [...images]
+    .map((img) => {
+      const src = img.getAttribute("src")
+      const width = Number.parseInt(img.getAttribute("width") || "", 10)
+      const height = Number.parseInt(img.getAttribute("height") || "", 10)
+      const rawSrcSet = img.getAttribute("srcset")
+
+      const srcSet = rawSrcSet
+        ? rawSrcSet
+            .split(",")
+            .map((entry) => entry.trim())
+            .map((entry) => {
+              const match = entry.match(/^(.*?)\s+(\d+(?:\.\d+)?)(w|x)$/)
+              if (!match) {
+                return null
+              }
+
+              const candidateSrc = match[1].trim()
+              const descriptorValue = Number.parseFloat(match[2])
+              const descriptorType = match[3]
+
+              if (descriptorType === "w") {
+                if (!width || !height) {
+                  return null
+                }
+
+                const candidateWidth = descriptorValue
+                return {
+                  height: Math.round((height / width) * candidateWidth),
+                  src: candidateSrc,
+                  width: candidateWidth,
+                }
+              }
+
+              if (!width || !height) {
+                return null
+              }
+
+              return {
+                height: Math.round(height * descriptorValue),
+                src: candidateSrc,
+                width: Math.round(width * descriptorValue),
+              }
+            })
+            .filter(Boolean)
+        : undefined
+
+      return {
+        height: Number.isFinite(height) ? height : undefined,
+        src,
+        srcSet: srcSet?.length ? srcSet : undefined,
+        width: Number.isFinite(width) ? width : undefined,
+      }
+    })
+    .filter((image) => image.src)
 }
 
 const getWeiboFirstImage = (docs) => {
@@ -29,7 +87,7 @@ const findImageEnclosure = (enclosures) => {
 }
 
 export const parseCoverImage = (entry) => {
-  const doc = new DOMParser().parseFromString(entry.content, "text/html")
+  const doc = parseHTML(entry.content)
   const isWeiboFeed =
     entry.feed?.site_url && /https:\/\/weibo\.com\/\d+\//.test(entry.feed.site_url)
 
