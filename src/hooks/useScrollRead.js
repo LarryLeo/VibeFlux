@@ -35,7 +35,7 @@ const READING_LINE_RATIO = 0.3
  *      `pendingIdsRef` (handles fast/coarse scrolling that causes cards to be
  *      unmounted before the position check could fire).
  *
- * 4. A debounced flush (300 ms delay, 1 500 ms max-wait) converts the pending
+ * 4. A debounced flush (300 ms delay, 1500 ms max-wait) converts the pending
  *    set into a single batched API call, keeping network traffic low.
  *
  * @param {{ entries: Array, cardsRef: React.RefObject }} options
@@ -61,6 +61,10 @@ const useScrollRead = ({ entries, cardsRef }) => {
   const seenIdsRef = useRef(new Set()) // ids that entered the viewport
   const pendingIdsRef = useRef(new Set()) // ids queued to be marked read
 
+  // Maintained as a ref so the scroll handler can do O(1) index lookups
+  // without rebuilding the map on every event.
+  const entryIndexMapRef = useRef(new Map())
+
   // Clear accumulated state when the user navigates to an entirely different
   // feed / category (no overlap between old and new entry sets).
   const prevEntryIdsRef = useRef(null)
@@ -76,6 +80,7 @@ const useScrollRead = ({ entries, cardsRef }) => {
     }
 
     prevEntryIdsRef.current = newIds
+    entryIndexMapRef.current = new Map(entries.map((e, i) => [e.id, i]))
   }, [entries])
 
   const enabled = markReadOnScroll && infoFrom !== "history"
@@ -206,7 +211,7 @@ const useScrollRead = ({ entries, cardsRef }) => {
       //    in list order, confirming they were scrolled past upward.
       if (domCards.length > 0) {
         const firstVisibleId = Number(domCards[0].dataset.entryId)
-        const indexMap = new Map(entriesRef.current.map((e, i) => [e.id, i]))
+        const indexMap = entryIndexMapRef.current
         const firstVisibleIndex = indexMap.get(firstVisibleId) ?? -1
 
         if (firstVisibleIndex > 0) {
