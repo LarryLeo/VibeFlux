@@ -12,6 +12,7 @@ import LoadingCards from "./LoadingCards"
 import FadeTransition from "@/components/ui/FadeTransition"
 import Ripple from "@/components/ui/Ripple"
 import useLoadMore from "@/hooks/useLoadMore"
+import useScrollRead from "@/hooks/useScrollRead"
 import { contentState, filteredEntriesState } from "@/store/contentState"
 
 import "./ArticleList.css"
@@ -52,6 +53,8 @@ const ArticleList = forwardRef(({ getEntries, handleEntryClick, cardsRef }, ref)
 
   const { loadingMore, handleLoadMore } = useLoadMore()
   const canLoadMore = loadMoreVisible && isArticleListReady && !loadingMore
+
+  useScrollRead({ entries: filteredEntries, cardsRef })
 
   const checkAndLoadMore = useMemo(
     () =>

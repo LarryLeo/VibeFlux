@@ -72,12 +72,11 @@ const ArticleCard = ({ entry, handleEntryClick, children }) => {
   const {
     coverDisplayMode,
     enableContextMenu,
-    markReadOnScroll,
     showDetailedRelativeTime,
     showEstimatedReadingTime,
     showFeedIcon,
   } = useStore(settingsState)
-  const { activeContent, infoFrom } = useStore(contentState)
+  const { activeContent } = useStore(contentState)
   const { hasIntegrations } = useStore(dataState)
   const { polyglot } = useStore(polyglotState)
   const isSelected = activeContent?.id === entry.id
@@ -95,49 +94,7 @@ const ArticleCard = ({ entry, handleEntryClick, children }) => {
   const [isWideImage, setIsWideImage] = useState(false)
   const [isImageLoaded, setIsImageLoaded] = useState(false)
 
-  const wasVisible = useRef(false)
   const cardRef = useRef(null)
-
-  useEffect(() => {
-    // If the article is read or scroll marking is not enabled, no observation needed
-    if (!isUnread || !markReadOnScroll || infoFrom === "history") {
-      return
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const observerEntry of entries) {
-          const { boundingClientRect, rootBounds, isIntersecting } = observerEntry
-
-          // Record status when the article enters the viewport
-          if (isIntersecting) {
-            wasVisible.current = true
-          } else if (wasVisible.current && boundingClientRect.top < rootBounds.top) {
-            // Only mark as read when the card is completely above the viewport top and was previously visible
-            handleToggleStatus(entry)
-            observer.unobserve(observerEntry.target)
-          }
-        }
-      },
-      {
-        // Set the root element as the scroll container
-        root: document.querySelector(".entry-list"),
-        // Set threshold to 0.2
-        threshold: 0.2,
-      },
-    )
-
-    const element = cardRef.current
-    if (element) {
-      observer.observe(element)
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element)
-      }
-    }
-  }, [entry, handleToggleStatus, infoFrom, isImageLoaded, isUnread, isWideImage, markReadOnScroll])
 
   useEffect(() => {
     let isSubscribed = true
