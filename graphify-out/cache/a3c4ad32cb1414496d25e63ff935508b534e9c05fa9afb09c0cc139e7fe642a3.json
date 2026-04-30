@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "src_store_contentstate_js",
+      "label": "contentState.js",
+      "file_type": "code",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "contentstate_resetcontent",
+      "label": "resetContent()",
+      "file_type": "code",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L135"
+    },
+    {
+      "id": "contentstate_setentrieswithdeduplication",
+      "label": "setEntriesWithDeduplication()",
+      "file_type": "code",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L138"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_store_contentstate_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "src_store_datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "src_store_settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "deduplicate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "filter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "version",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "contentstate_resetcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_contentstate_js",
+      "target": "contentstate_setentrieswithdeduplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L138",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "contentstate_resetcontent",
+      "callee": "set",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "contentstate_setentrieswithdeduplication",
+      "callee": "get",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "contentstate_setentrieswithdeduplication",
+      "callee": "get",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L140"
+    },
+    {
+      "caller_nid": "contentstate_setentrieswithdeduplication",
+      "callee": "includes",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "contentstate_setentrieswithdeduplication",
+      "callee": "setEntries",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L144"
+    },
+    {
+      "caller_nid": "contentstate_setentrieswithdeduplication",
+      "callee": "removeDuplicateEntries",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L149"
+    },
+    {
+      "caller_nid": "contentstate_setentrieswithdeduplication",
+      "callee": "setEntries",
+      "source_file": "src\\store\\contentState.js",
+      "source_location": "L150"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_ui_customlink_jsx",
+      "label": "CustomLink.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\CustomLink.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "customlink_customlink",
+      "label": "CustomLink()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\CustomLink.jsx",
+      "source_location": "L4"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_ui_customlink_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\CustomLink.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_customlink_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\CustomLink.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_customlink_jsx",
+      "target": "customlink_customlink",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\CustomLink.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "customlink_customlink",
+      "callee": "useState",
+      "source_file": "src\\components\\ui\\CustomLink.jsx",
+      "source_location": "L10"
+    }
+  ]
+}

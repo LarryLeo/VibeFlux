@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "src_store_settingsstate_js",
+      "label": "settingsState.js",
+      "file_type": "code",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "settingsstate_getsettings",
+      "label": "getSettings()",
+      "file_type": "code",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L56"
+    },
+    {
+      "id": "settingsstate_updatesettings",
+      "label": "updateSettings()",
+      "file_type": "code",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L58"
+    },
+    {
+      "id": "settingsstate_resetsettings",
+      "label": "resetSettings()",
+      "file_type": "code",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L61"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_store_settingsstate_js",
+      "target": "persistent",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_settingsstate_js",
+      "target": "locales",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_settingsstate_js",
+      "target": "settingsstate_getsettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_settingsstate_js",
+      "target": "settingsstate_updatesettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_settingsstate_js",
+      "target": "settingsstate_resetsettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L61",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "settingsstate_getsettings",
+      "callee": "get",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "settingsstate_updatesettings",
+      "callee": "set",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "settingsstate_updatesettings",
+      "callee": "get",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "settingsstate_resetsettings",
+      "callee": "set",
+      "source_file": "src\\store\\settingsState.js",
+      "source_location": "L61"
+    }
+  ]
+}

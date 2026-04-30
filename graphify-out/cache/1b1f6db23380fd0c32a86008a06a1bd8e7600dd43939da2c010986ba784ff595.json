@@ -1,0 +1,162 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_url_js",
+      "label": "url.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "url_gethostname",
+      "label": "getHostname()",
+      "file_type": "code",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "url_getsecondhostname",
+      "label": "getSecondHostname()",
+      "file_type": "code",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "url_extractbasepath",
+      "label": "extractBasePath()",
+      "file_type": "code",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L21"
+    },
+    {
+      "id": "url_buildentrydetailpath",
+      "label": "buildEntryDetailPath()",
+      "file_type": "code",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L25"
+    },
+    {
+      "id": "url_isentrydetailpath",
+      "label": "isEntryDetailPath()",
+      "file_type": "code",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L29"
+    },
+    {
+      "id": "url_extractentryidfrompath",
+      "label": "extractEntryIdFromPath()",
+      "file_type": "code",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L33"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_url_js",
+      "target": "url_gethostname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_url_js",
+      "target": "url_getsecondhostname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_url_js",
+      "target": "url_extractbasepath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_url_js",
+      "target": "url_buildentrydetailpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_url_js",
+      "target": "url_isentrydetailpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_url_js",
+      "target": "url_extractentryidfrompath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "url_getsecondhostname",
+      "target": "url_gethostname",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "url_gethostname",
+      "callee": "match",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L3"
+    },
+    {
+      "caller_nid": "url_getsecondhostname",
+      "callee": "split",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L13"
+    },
+    {
+      "caller_nid": "url_getsecondhostname",
+      "callee": "join",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "url_getsecondhostname",
+      "callee": "slice",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "url_extractbasepath",
+      "callee": "replace",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "url_isentrydetailpath",
+      "callee": "test",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "url_extractentryidfrompath",
+      "callee": "match",
+      "source_file": "src\\utils\\url.js",
+      "source_location": "L34"
+    }
+  ]
+}

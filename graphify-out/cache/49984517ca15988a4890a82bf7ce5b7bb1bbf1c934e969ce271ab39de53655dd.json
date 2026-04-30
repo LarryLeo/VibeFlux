@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_deduplicate_js",
+      "label": "deduplicate.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "deduplicate_removeduplicateentries",
+      "label": "removeDuplicateEntries()",
+      "file_type": "code",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_deduplicate_js",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_deduplicate_js",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_deduplicate_js",
+      "target": "useentryactions",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_deduplicate_js",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_deduplicate_js",
+      "target": "deduplicate_removeduplicateentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "get",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "map",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "filter",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "toSorted",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "map",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "filter",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "handleEntriesStatusUpdate",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "catch",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "updateEntriesStatus",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "deduplicate_removeduplicateentries",
+      "callee": "toSorted",
+      "source_file": "src\\utils\\deduplicate.js",
+      "source_location": "L72"
+    }
+  ]
+}

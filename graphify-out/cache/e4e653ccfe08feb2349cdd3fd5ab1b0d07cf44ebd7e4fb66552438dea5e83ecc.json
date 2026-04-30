@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "src_store_authstate_js",
+      "label": "authState.js",
+      "file_type": "code",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "authstate_setauth",
+      "label": "setAuth()",
+      "file_type": "code",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L18"
+    },
+    {
+      "id": "authstate_resetauth",
+      "label": "resetAuth()",
+      "file_type": "code",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L20"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_store_authstate_js",
+      "target": "persistent",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_authstate_js",
+      "target": "authstate_setauth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_store_authstate_js",
+      "target": "authstate_resetauth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "authstate_resetauth",
+      "target": "authstate_setauth",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L20",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "authstate_setauth",
+      "callee": "set",
+      "source_file": "src\\store\\authState.js",
+      "source_location": "L18"
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+[
+  {
+    "community": 0,
+    "size": 32,
+    "labels": [
+      "ActionButtons()",
+      "AddFeed()",
+      "Content()",
+      "isInHorizontalScrollable()",
+      "ContextProvider()",
+      "AddFeedModal()",
+      "Main()",
+      "SettingsModal()",
+      "Profile()",
+      "MoreOptionsDropdown()"
+    ]
+  },
+  {
+    "community": 1,
+    "size": 27,
+    "labels": [
+      "ReactFlux HTML shell",
+      "External LXGW WenKai font stylesheet",
+      "Initial loading spinner",
+      "/src/main.jsx entrypoint",
+      "Web app manifest metadata",
+      "Light and dark theme color metadata",
+      "Arco Design and Day.js i18n packages",
+      "Article and feed management",
+      "Cloudflare Pages",
+      "Customizable reading experience"
+    ]
+  },
+  {
+    "community": 2,
+    "size": 25,
+    "labels": [
+      "addDateFilters()",
+      "buildEntriesUrl()",
+      "getAllEntries()",
+      "getCategoryEntries()",
+      "getEntry()",
+      "getFeedEntries()",
+      "getHistoryEntries()",
+      "getOriginalContent()",
+      "getStarredEntries()",
+      "getTodayEntries()"
+    ]
+  },
+  {
+    "community": 3,
+    "size": 23,
+    "labels": [
+      "CustomTooltip()",
+      "ActiveButton()",
+      "SearchAndSortBar()",
+      "CustomTabTitle()",
+      "SettingsTabs()",
+      "CategoryGroup()",
+      "CategoryTitle()",
+      "CountDisplay()",
+      "CustomMenuItem()",
+      "downloadFile()"
+    ]
+  },
+  {
+    "community": 4,
+    "size": 17,
+    "labels": [
+      "All()",
+      "getEntries()",
+      "update-fonts.js",
+      "All.jsx",
+      "buildGoogleFontsURL()",
+      "buildVersionInfo()",
+      "calculateHash()",
+      "checkForChanges()",
+      "cleanFontDirectory()",
+      "downloadFont()"
+    ]
+  },
+  {
+    "community": 5,
+    "size": 17,
+    "labels": [
+      "Appearance()",
+      "handleConfigChange()",
+      "applyColor()",
+      "getColorFromPalette()",
+      "getColorValue()",
+      "getDisplayColorValue()",
+      "isDarkMode()",
+      "FooterPanel()",
+      "handleFilterChange()",
+      "MarkAllReadButton()"
+    ]
+  },
+  {
+    "community": 6,
+    "size": 17,
+    "labels": [
+      "CategoryList()",
+      "getUTCDate()",
+      "EditCategoryModal()",
+      "BulkOperationsModal()",
+      "BulkUpdateModal()",
+      "FeedList()",
+      "RefreshModal()",
+      "Sidebar()",
+      "CategoryList.jsx",
+      "FeedList.jsx"
+    ]
+  },
+  {
+    "community": 7,
+    "size": 16,
+    "labels": [
+      "App()",
+      "getLocale()",
+      "isValidAuth()",
+      "Login()",
+      "RouterProtect()",
+      "App.jsx",
+      "useFeedIconsSync.js",
+      "useLanguage.js",
+      "useTheme.js",
+      "Login.jsx"
+    ]
+  },
+  {
+    "community": 8,
+    "size": 14,
+    "labels": [
+      "resetContent()",
+      "setEntriesWithDeduplication()",
+      "checkIsInLast24Hours()",
+      "removeDuplicateEntries()",
+      "useArticleList.js",
+      "useEntryActions.js",
+      "contentState.js",
+      "deduplicate.js",
+      "handleResponses()",
+      "useArticleList()"
+    ]
+  },
+  {
+    "community": 9,
+    "size": 13,
+    "labels": [
+      "decodeAndParseCodeContent()",
+      "getHtmlParserOptions()",
+      "handleBskyVideo()",
+      "handleCodeBlock()",
+      "handleContentTable()",
+      "handleFigure()",
+      "handleIframe()",
+      "handleImage()",
+      "handleLinkWithImage()",
+      "handleTableBasedCode()"
+    ]
+  },
+  {
+    "community": 10,
+    "size": 13,
+    "labels": [
+      "ArticleCard()",
+      "ArticleCardImage()",
+      "extractTextFromHtml()",
+      "generateReadableDate()",
+      "generateReadingTime()",
+      "generateRelativeTime()",
+      "get24HoursAgoTimestamp()",
+      "getDayEndTimestamp()",
+      "getStartOfToday()",
+      "getTimestamp()"
+    ]
+  },
+  {
+    "community": 11,
+    "size": 12,
+    "labels": [
+      "FeedIcon()",
+      "getFallbackIconURL()",
+      "FeedIcon.jsx",
+      "useFeedIcons.js",
+      "url.js",
+      "buildEntryDetailPath()",
+      "extractBasePath()",
+      "extractEntryIdFromPath()",
+      "getHostname()",
+      "getSecondHostname()"
+    ]
+  },
+  {
+    "community": 12,
+    "size": 11,
+    "labels": [
+      "addCategory()",
+      "deleteCategory()",
+      "getCategories()",
+      "markCategoryAsRead()",
+      "refreshCategoryFeed()",
+      "updateCategory()",
+      "General()",
+      "categories.js",
+      "General.jsx",
+      "version.js"
+    ]
+  },
+  {
+    "community": 13,
+    "size": 10,
+    "labels": [
+      "filterEntries()",
+      "includesIgnoreCase()",
+      "computeLPSArray()",
+      "extractBasicSearchTerms()",
+      "filterByQuery()",
+      "filterData()",
+      "kmpSearch()",
+      "parseQuery()",
+      "filter.js",
+      "kmp.js"
+    ]
+  },
+  {
+    "community": 14,
+    "size": 9,
+    "labels": [
+      "addFeed()",
+      "deleteFeed()",
+      "getCounters()",
+      "getFeeds()",
+      "markFeedAsRead()",
+      "refreshAllFeed()",
+      "refreshFeed()",
+      "updateFeed()",
+      "feeds.js"
+    ]
+  },
+  {
+    "community": 15,
+    "size": 9,
+    "labels": [
+      "exportOPML()",
+      "getCurrentUser()",
+      "getFeedIcon()",
+      "getIntegrationsStatus()",
+      "getVersion()",
+      "importOPML()",
+      "markAllAsRead()",
+      "saveEnclosureProgression()",
+      "index.js"
+    ]
+  },
+  {
+    "community": 16,
+    "size": 7,
+    "labels": [
+      "Article Detail View",
+      "Article List",
+      "Context-Preserving Reading",
+      "Feed Sidebar",
+      "ReactFlux",
+      "Secret Level Trailer Article",
+      "Split-View Reading Layout"
+    ]
+  },
+  {
+    "community": 17,
+    "size": 6,
+    "labels": [
+      "extractImageSources()",
+      "findImageEnclosure()",
+      "findMediaEnclosure()",
+      "getWeiboFirstImage()",
+      "parseCoverImage()",
+      "images.js"
+    ]
+  },
+  {
+    "community": 18,
+    "size": 5,
+    "labels": [
+      "LoadMoreComponent()",
+      "ArticleList.jsx",
+      "useLoadMore.js",
+      "isUniqueEntry()",
+      "useLoadMore()"
+    ]
+  },
+  {
+    "community": 19,
+    "size": 5,
+    "labels": ["getMediaType()", "getMimeType()", "initHls()", "PlyrPlayer()", "PlyrPlayer.jsx"]
+  },
+  {
+    "community": 20,
+    "size": 5,
+    "labels": [
+      "resetHotkey()",
+      "updateHotkey()",
+      "createSetter()",
+      "hotkeysState.js",
+      "nanostores.js"
+    ]
+  },
+  {
+    "community": 21,
+    "size": 5,
+    "labels": [
+      "Cross-Device Reading Experience",
+      "Desktop Three-Pane Layout",
+      "Mobile Article View",
+      "ReactFlux Interface",
+      "Devices Showcase Mockup"
+    ]
+  },
+  {
+    "community": 22,
+    "size": 4,
+    "labels": ["CodeBlock()", "CopyButton()", "LanguageSelector()", "CodeBlock.jsx"]
+  },
+  {
+    "community": 23,
+    "size": 4,
+    "labels": [
+      "findImageNode()",
+      "ImageComponent()",
+      "ImageOverlayButton()",
+      "ImageOverlayButton.jsx"
+    ]
+  },
+  {
+    "community": 24,
+    "size": 4,
+    "labels": [
+      "capitalizeFirstLetter()",
+      "EditableTagGroup()",
+      "processKeyName()",
+      "EditableTagGroup.jsx"
+    ]
+  },
+  {
+    "community": 25,
+    "size": 4,
+    "labels": ["getBrowserLanguage()", "getTextType()", "sortMixedLanguageArray()", "locales.js"]
+  },
+  {
+    "community": 26,
+    "size": 4,
+    "labels": ["All User Agents", "Allow All Crawling", "Robots.txt", "Robots.txt Specification"]
+  },
+  {
+    "community": 27,
+    "size": 4,
+    "labels": ["Background Reading Scene", "Coffee Mug", "Open Book", "Reading Activity"]
+  },
+  {
+    "community": 28,
+    "size": 3,
+    "labels": ["LoadingCard()", "LoadingCards()", "LoadingCards.jsx"]
+  },
+  {
+    "community": 29,
+    "size": 3,
+    "labels": ["Ripple()", "useDebouncedRippleCleanUp()", "Ripple.jsx"]
+  },
+  {
+    "community": 30,
+    "size": 3,
+    "labels": ["resetAuth()", "setAuth()", "authState.js"]
+  },
+  {
+    "community": 31,
+    "size": 3,
+    "labels": ["resetData()", "setIsCoreDataReady()", "dataState.js"]
+  },
+  {
+    "community": 32,
+    "size": 3,
+    "labels": ["resetFeedIcons()", "updateFeedIcon()", "feedIconsState.js"]
+  },
+  {
+    "community": 33,
+    "size": 3,
+    "labels": ["extractHeadings()", "scrollToHeading()", "dom.js"]
+  },
+  {
+    "community": 34,
+    "size": 3,
+    "labels": ["handleEnterKeyToSubmit()", "validateAndFormatFormFields()", "form.js"]
+  },
+  {
+    "community": 35,
+    "size": 2,
+    "labels": ["createApiClient()", "ofetch.js"]
+  },
+  {
+    "community": 36,
+    "size": 2,
+    "labels": ["ArticleTOC()", "ArticleTOC.jsx"]
+  },
+  {
+    "community": 37,
+    "size": 2,
+    "labels": ["ImageLinkTag()", "ImageLinkTag.jsx"]
+  },
+  {
+    "community": 38,
+    "size": 2,
+    "labels": ["EditableTag()", "EditableTag.jsx"]
+  },
+  {
+    "community": 39,
+    "size": 2,
+    "labels": ["Hotkeys()", "Hotkeys.jsx"]
+  },
+  {
+    "community": 40,
+    "size": 2,
+    "labels": ["SettingItem()", "SettingItem.jsx"]
+  },
+  {
+    "community": 41,
+    "size": 2,
+    "labels": ["CustomLink()", "CustomLink.jsx"]
+  },
+  {
+    "community": 42,
+    "size": 2,
+    "labels": ["EditFeedModal()", "EditFeedModal.jsx"]
+  },
+  {
+    "community": 43,
+    "size": 2,
+    "labels": ["FadeTransition()", "FadeTransition.jsx"]
+  },
+  {
+    "community": 44,
+    "size": 2,
+    "labels": ["Category()", "Category.jsx"]
+  },
+  {
+    "community": 45,
+    "size": 2,
+    "labels": ["ErrorPage()", "ErrorPage.jsx"]
+  },
+  {
+    "community": 46,
+    "size": 2,
+    "labels": ["Feed()", "Feed.jsx"]
+  },
+  {
+    "community": 47,
+    "size": 2,
+    "labels": ["setExpandedCategories()", "sidebarState.js"]
+  },
+  {
+    "community": 48,
+    "size": 2,
+    "labels": ["registerLanguages()", "highlighter.js"]
+  },
+  {
+    "community": 49,
+    "size": 2,
+    "labels": ["hideSpinner()", "loading.js"]
+  },
+  {
+    "community": 50,
+    "size": 2,
+    "labels": ["time.js", "sleep()"]
+  },
+  {
+    "community": 51,
+    "size": 2,
+    "labels": ["Default Feed Icon", "RSS Feed"]
+  },
+  {
+    "community": 52,
+    "size": 2,
+    "labels": ["Application Logo", "Stylized Document Icon"]
+  },
+  {
+    "community": 53,
+    "size": 1,
+    "labels": ["eslint.config.mjs"]
+  },
+  {
+    "community": 54,
+    "size": 1,
+    "labels": ["vite.config.js"]
+  },
+  {
+    "community": 55,
+    "size": 1,
+    "labels": ["main.jsx"]
+  },
+  {
+    "community": 56,
+    "size": 1,
+    "labels": ["routes.jsx"]
+  },
+  {
+    "community": 57,
+    "size": 1,
+    "labels": ["constants.js"]
+  },
+  {
+    "community": 58,
+    "size": 1,
+    "labels": ["Document Icon"]
+  }
+]

@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_settings_categorylist_jsx",
+      "label": "CategoryList.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "categorylist_categorylist",
+      "label": "CategoryList()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "editcategorymodal",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "usecategoryoperations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "src_components_settings_categorylist_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_categorylist_jsx",
+      "target": "categorylist_categorylist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "useForm",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "useCategoryOperations",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "categorylist_categorylist",
+      "callee": "map",
+      "source_file": "src\\components\\Settings\\CategoryList.jsx",
+      "source_location": "L31"
+    }
+  ]
+}

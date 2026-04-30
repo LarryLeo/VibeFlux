@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_colors_js",
+      "label": "colors.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "colors_isdarkmode",
+      "label": "isDarkMode()",
+      "file_type": "code",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L14"
+    },
+    {
+      "id": "colors_getcolorfrompalette",
+      "label": "getColorFromPalette()",
+      "file_type": "code",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L20"
+    },
+    {
+      "id": "colors_getcolorvalue",
+      "label": "getColorValue()",
+      "file_type": "code",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L25"
+    },
+    {
+      "id": "colors_getdisplaycolorvalue",
+      "label": "getDisplayColorValue()",
+      "file_type": "code",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L27"
+    },
+    {
+      "id": "colors_applycolor",
+      "label": "applyColor()",
+      "file_type": "code",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L29"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_colors_js",
+      "target": "color",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_colors_js",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_colors_js",
+      "target": "colors_isdarkmode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_colors_js",
+      "target": "colors_getcolorfrompalette",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_colors_js",
+      "target": "colors_getcolorvalue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_colors_js",
+      "target": "colors_getdisplaycolorvalue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_colors_js",
+      "target": "colors_applycolor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "colors_getcolorfrompalette",
+      "target": "colors_isdarkmode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "colors_getcolorvalue",
+      "target": "colors_getcolorfrompalette",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "colors_getdisplaycolorvalue",
+      "target": "colors_getcolorfrompalette",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "colors_applycolor",
+      "target": "colors_getcolorvalue",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L30",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "colors_isdarkmode",
+      "callee": "matchMedia",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "colors_isdarkmode",
+      "callee": "getSettings",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "colors_applycolor",
+      "callee": "map",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "colors_applycolor",
+      "callee": "generate",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "colors_applycolor",
+      "callee": "entries",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "colors_applycolor",
+      "callee": "setProperty",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "colors_applycolor",
+      "callee": "setAttribute",
+      "source_file": "src\\utils\\colors.js",
+      "source_location": "L36"
+    }
+  ]
+}

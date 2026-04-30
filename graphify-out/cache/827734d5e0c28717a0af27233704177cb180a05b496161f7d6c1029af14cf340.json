@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_routerprotect_jsx",
+      "label": "RouterProtect.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "routerprotect_routerprotect",
+      "label": "RouterProtect()",
+      "file_type": "code",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_routerprotect_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_routerprotect_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_routerprotect_jsx",
+      "target": "authstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_routerprotect_jsx",
+      "target": "auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_routerprotect_jsx",
+      "target": "routerprotect_routerprotect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "routerprotect_routerprotect",
+      "callee": "useStore",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "routerprotect_routerprotect",
+      "callee": "useLocation",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "routerprotect_routerprotect",
+      "callee": "isValidAuth",
+      "source_file": "src\\pages\\RouterProtect.jsx",
+      "source_location": "L11"
+    }
+  ]
+}

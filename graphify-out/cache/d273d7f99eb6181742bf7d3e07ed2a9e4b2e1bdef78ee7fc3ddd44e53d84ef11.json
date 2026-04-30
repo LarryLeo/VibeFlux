@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_nanostores_js",
+      "label": "nanostores.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\nanostores.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "nanostores_createsetter",
+      "label": "createSetter()",
+      "file_type": "code",
+      "source_file": "src\\utils\\nanostores.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_nanostores_js",
+      "target": "nanostores_createsetter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\nanostores.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_category_jsx",
+      "label": "Category.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "category_category",
+      "label": "Category()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_category_jsx",
+      "target": "lodash_es",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_category_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_category_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_category_jsx",
+      "target": "content",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_category_jsx",
+      "target": "category_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "category_category",
+      "callee": "useParams",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "category_category",
+      "callee": "partial",
+      "source_file": "src\\pages\\Category.jsx",
+      "source_location": "L10"
+    }
+  ]
+}

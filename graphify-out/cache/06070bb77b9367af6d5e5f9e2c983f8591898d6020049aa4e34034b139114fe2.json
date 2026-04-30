@@ -1,0 +1,209 @@
+{
+  "nodes": [
+    {
+      "id": "src_apis_index_js",
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_exportopml",
+      "label": "exportOPML()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "index_importopml",
+      "label": "importOPML()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "index_getcurrentuser",
+      "label": "getCurrentUser()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "index_getfeedicon",
+      "label": "getFeedIcon()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L17"
+    },
+    {
+      "id": "index_getintegrationsstatus",
+      "label": "getIntegrationsStatus()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L19"
+    },
+    {
+      "id": "index_getversion",
+      "label": "getVersion()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L21"
+    },
+    {
+      "id": "index_markallasread",
+      "label": "markAllAsRead()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "index_saveenclosureprogression",
+      "label": "saveEnclosureProgression()",
+      "file_type": "code",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L28"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_apis_index_js",
+      "target": "src_apis_ofetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_exportopml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_importopml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_getcurrentuser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_getfeedicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_getintegrationsstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_getversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_markallasread",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_index_js",
+      "target": "index_saveenclosureprogression",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "index_markallasread",
+      "target": "index_getcurrentuser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L24",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_exportopml",
+      "callee": "get",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "index_importopml",
+      "callee": "raw",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "index_getcurrentuser",
+      "callee": "get",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "index_getfeedicon",
+      "callee": "get",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "index_getintegrationsstatus",
+      "callee": "get",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "index_getversion",
+      "callee": "get",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "index_markallasread",
+      "callee": "put",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "index_saveenclosureprogression",
+      "callee": "put",
+      "source_file": "src\\apis\\index.js",
+      "source_location": "L31"
+    }
+  ]
+}

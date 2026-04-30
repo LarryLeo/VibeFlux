@@ -1,0 +1,354 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_articlecard_jsx",
+      "label": "ArticleCard.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "articlecard_articlecardimage",
+      "label": "ArticleCardImage()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "articlecard_extracttextfromhtml",
+      "label": "extractTextFromHtml()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L48"
+    },
+    {
+      "id": "articlecard_articlecard",
+      "label": "ArticleCard()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L71"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "es",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "feedicon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "useentryactions",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "src_components_article_articlecard_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "articlecard_articlecardimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "articlecard_extracttextfromhtml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_articlecard_jsx",
+      "target": "articlecard_articlecard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L71",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "articlecard_articlecardimage",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "articlecard_extracttextfromhtml",
+      "callee": "trim",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "articlecard_extracttextfromhtml",
+      "callee": "replaceAll",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "articlecard_extracttextfromhtml",
+      "callee": "replaceAll",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "articlecard_extracttextfromhtml",
+      "callee": "replaceAll",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "articlecard_extracttextfromhtml",
+      "callee": "replaceAll",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L80"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L82"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useEntryActions",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L92"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L94"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useRef",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useRef",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L99"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "useMemo",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L199"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L210"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L221"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L222"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L232"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L233"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "t",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L245"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "generateRelativeTime",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L288"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "generateReadingTime",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L307"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "getLineClamp",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L312"
+    },
+    {
+      "caller_nid": "articlecard_articlecard",
+      "callee": "getLineClamp",
+      "source_file": "src\\components\\Article\\ArticleCard.jsx",
+      "source_location": "L312"
+    }
+  ]
+}

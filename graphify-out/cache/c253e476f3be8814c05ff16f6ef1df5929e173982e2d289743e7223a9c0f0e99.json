@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_useloadmore_js",
+      "label": "useLoadMore.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "useloadmore_isuniqueentry",
+      "label": "isUniqueEntry()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L14"
+    },
+    {
+      "id": "useloadmore_useloadmore",
+      "label": "useLoadMore()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L17"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "images",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "kmp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "useloadmore_isuniqueentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_useloadmore_js",
+      "target": "useloadmore_useloadmore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L17",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "useloadmore_isuniqueentry",
+      "callee": "some",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "useloadmore_useloadmore",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "useloadmore_useloadmore",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "useloadmore_useloadmore",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "useloadmore_useloadmore",
+      "callee": "includes",
+      "source_file": "src\\hooks\\useLoadMore.js",
+      "source_location": "L41"
+    }
+  ]
+}

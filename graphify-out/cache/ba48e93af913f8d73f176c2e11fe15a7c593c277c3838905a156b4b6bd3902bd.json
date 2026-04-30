@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_starred_jsx",
+      "label": "Starred.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "starred_getentries",
+      "label": "getEntries()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "starred_starred",
+      "label": "Starred()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L6"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_starred_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_starred_jsx",
+      "target": "content",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_starred_jsx",
+      "target": "starred_getentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_starred_jsx",
+      "target": "starred_starred",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "starred_getentries",
+      "callee": "getStarredEntries",
+      "source_file": "src\\pages\\Starred.jsx",
+      "source_location": "L4"
+    }
+  ]
+}

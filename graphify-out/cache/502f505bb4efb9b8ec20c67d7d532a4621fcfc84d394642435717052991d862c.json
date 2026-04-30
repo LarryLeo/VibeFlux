@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_imageoverlaybutton_jsx",
+      "label": "ImageOverlayButton.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "imageoverlaybutton_imagecomponent",
+      "label": "ImageComponent()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "imageoverlaybutton_findimagenode",
+      "label": "findImageNode()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "imageoverlaybutton_imageoverlaybutton",
+      "label": "ImageOverlayButton()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L47"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "src_components_article_imagelinktag",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "src_components_article_imageoverlaybutton_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "imageoverlaybutton_imagecomponent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "imageoverlaybutton_findimagenode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_imageoverlaybutton_jsx",
+      "target": "imageoverlaybutton_imageoverlaybutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "imageoverlaybutton_imageoverlaybutton",
+      "target": "imageoverlaybutton_findimagenode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L51",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "imageoverlaybutton_imagecomponent",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L13"
+    },
+    {
+      "caller_nid": "imageoverlaybutton_findimagenode",
+      "callee": "find",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "imageoverlaybutton_imageoverlaybutton",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "imageoverlaybutton_imageoverlaybutton",
+      "callee": "useState",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "imageoverlaybutton_imageoverlaybutton",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Article\\ImageOverlayButton.jsx",
+      "source_location": "L53"
+    }
+  ]
+}

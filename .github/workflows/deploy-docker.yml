@@ -10,7 +10,6 @@ on:
       - ".editorconfig"
       - ".github/**"
       - ".gitignore"
-      - ".husky/**"
       - ".prettierignore"
       - ".prettierrc"
       - "docs/**"

@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_locales_js",
+      "label": "locales.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "locales_getbrowserlanguage",
+      "label": "getBrowserLanguage()",
+      "file_type": "code",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "locales_gettexttype",
+      "label": "getTextType()",
+      "file_type": "code",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "locales_sortmixedlanguagearray",
+      "label": "sortMixedLanguageArray()",
+      "file_type": "code",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L21"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_locales_js",
+      "target": "locales_getbrowserlanguage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_locales_js",
+      "target": "locales_gettexttype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_locales_js",
+      "target": "locales_sortmixedlanguagearray",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L21",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "locales_gettexttype",
+      "callee": "test",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L11"
+    },
+    {
+      "caller_nid": "locales_gettexttype",
+      "callee": "test",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "locales_sortmixedlanguagearray",
+      "callee": "toSorted",
+      "source_file": "src\\utils\\locales.js",
+      "source_location": "L26"
+    }
+  ]
+}

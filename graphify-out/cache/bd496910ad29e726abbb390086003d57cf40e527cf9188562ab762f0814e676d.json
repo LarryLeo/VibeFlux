@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_errorpage_jsx",
+      "label": "ErrorPage.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "errorpage_errorpage",
+      "label": "ErrorPage()",
+      "file_type": "code",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_errorpage_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_errorpage_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_errorpage_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_errorpage_jsx",
+      "target": "loading",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_errorpage_jsx",
+      "target": "errorpage_errorpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "errorpage_errorpage",
+      "callee": "useNavigate",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "errorpage_errorpage",
+      "callee": "useRouteError",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "errorpage_errorpage",
+      "callee": "error",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "errorpage_errorpage",
+      "callee": "useEffect",
+      "source_file": "src\\pages\\ErrorPage.jsx",
+      "source_location": "L12"
+    }
+  ]
+}

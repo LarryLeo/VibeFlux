@@ -1,0 +1,64 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_usemodaltoggle_js",
+      "label": "useModalToggle.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useModalToggle.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "usemodaltoggle_usemodaltoggle",
+      "label": "useModalToggle()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useModalToggle.js",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_usemodaltoggle_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useModalToggle.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usemodaltoggle_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useModalToggle.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usemodaltoggle_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useModalToggle.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usemodaltoggle_js",
+      "target": "usemodaltoggle_usemodaltoggle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useModalToggle.js",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usemodaltoggle_usemodaltoggle",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useModalToggle.js",
+      "source_location": "L17"
+    }
+  ]
+}

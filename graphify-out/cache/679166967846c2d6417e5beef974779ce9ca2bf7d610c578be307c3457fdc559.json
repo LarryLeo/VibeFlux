@@ -1,0 +1,179 @@
+{
+  "nodes": [
+    {
+      "id": "screenshot_reactflux_app",
+      "label": "ReactFlux",
+      "file_type": "image",
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "screenshot_feed_sidebar",
+      "label": "Feed Sidebar",
+      "file_type": "image",
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "screenshot_article_list",
+      "label": "Article List",
+      "file_type": "image",
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "screenshot_article_detail_view",
+      "label": "Article Detail View",
+      "file_type": "image",
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "screenshot_secret_level_article",
+      "label": "Secret Level Trailer Article",
+      "file_type": "image",
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "screenshot_split_view_layout",
+      "label": "Split-View Reading Layout",
+      "file_type": "image",
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "screenshot_context_preserving_reading",
+      "label": "Context-Preserving Reading",
+      "file_type": "image",
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "screenshot_reactflux_app",
+      "target": "screenshot_feed_sidebar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_reactflux_app",
+      "target": "screenshot_article_list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_reactflux_app",
+      "target": "screenshot_article_detail_view",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_article_list",
+      "target": "screenshot_secret_level_article",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_article_detail_view",
+      "target": "screenshot_secret_level_article",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_split_view_layout",
+      "target": "screenshot_article_list",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_split_view_layout",
+      "target": "screenshot_article_detail_view",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_context_preserving_reading",
+      "target": "screenshot_split_view_layout",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.72,
+      "source_file": "images\\screenshot.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "feed_reading_workflow",
+      "label": "Feed Reading Workflow",
+      "nodes": [
+        "screenshot_feed_sidebar",
+        "screenshot_article_list",
+        "screenshot_article_detail_view",
+        "screenshot_secret_level_article"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.82,
+      "source_file": "images\\screenshot.png"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_ui_feedicon_jsx",
+      "label": "FeedIcon.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "feedicon_getfallbackiconurl",
+      "label": "getFallbackIconURL()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "feedicon_feedicon",
+      "label": "FeedIcon()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_ui_feedicon_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_feedicon_jsx",
+      "target": "usefeedicons",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_feedicon_jsx",
+      "target": "feediconsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_feedicon_jsx",
+      "target": "url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_feedicon_jsx",
+      "target": "feedicon_getfallbackiconurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_feedicon_jsx",
+      "target": "feedicon_feedicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "feedicon_feedicon",
+      "target": "feedicon_getfallbackiconurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "feedicon_getfallbackiconurl",
+      "callee": "getSecondHostname",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "feedicon_getfallbackiconurl",
+      "callee": "getSecondHostname",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "feedicon_feedicon",
+      "callee": "useState",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "feedicon_feedicon",
+      "callee": "useState",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "feedicon_feedicon",
+      "callee": "useRef",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "feedicon_feedicon",
+      "callee": "useFeedIcons",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "feedicon_feedicon",
+      "callee": "(() => {\r\n    if (fallbackFailed) {\r\n      return DEFAULT_ICON_URL\r\n    }\r\n    if (fetchedIconURL && !useFallback) {\r\n      return fetchedIconURL\r\n    }\r\n    if (iconId === 0 || useFallback) {\r\n      return fallbackIconURL\r\n    }\r\n    return DEFAULT_ICON_URL\r\n  })",
+      "source_file": "src\\components\\ui\\FeedIcon.jsx",
+      "source_location": "L26"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_ui_editfeedmodal_jsx",
+      "label": "EditFeedModal.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "editfeedmodal_editfeedmodal",
+      "label": "EditFeedModal()",
+      "file_type": "code",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_ui_editfeedmodal_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editfeedmodal_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editfeedmodal_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editfeedmodal_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editfeedmodal_jsx",
+      "target": "authstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editfeedmodal_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_editfeedmodal_jsx",
+      "target": "editfeedmodal_editfeedmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L120"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "map",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L134"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L137"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L145"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L150"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L153"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L159"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L169"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L180"
+    },
+    {
+      "caller_nid": "editfeedmodal_editfeedmodal",
+      "callee": "t",
+      "source_file": "src\\components\\ui\\EditFeedModal.jsx",
+      "source_location": "L187"
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_settings_feedlist_jsx",
+      "label": "FeedList.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "feedlist_refreshmodal",
+      "label": "RefreshModal()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L73"
+    },
+    {
+      "id": "feedlist_bulkoperationsmodal",
+      "label": "BulkOperationsModal()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L147"
+    },
+    {
+      "id": "feedlist_bulkupdatemodal",
+      "label": "BulkUpdateModal()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L291"
+    },
+    {
+      "id": "feedlist_feedlist",
+      "label": "FeedList()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L352"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "apis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "customlink",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "customtooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "editfeedmodal",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "usefeedoperations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "usescreenwidth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "kmp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "time",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "src_components_settings_feedlist_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "feedlist_refreshmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "feedlist_bulkoperationsmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "feedlist_bulkupdatemodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L291",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_feedlist_jsx",
+      "target": "feedlist_feedlist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L352",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "useFeedOperations",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L116"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L126"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L133"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "feedlist_refreshmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L149"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L151"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L152"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L153"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L222"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L228"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L231"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L241"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L244"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L250"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L252"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "map",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L256"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L266"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L268"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L273"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L276"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L279"
+    },
+    {
+      "caller_nid": "feedlist_bulkoperationsmodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L282"
+    },
+    {
+      "caller_nid": "feedlist_bulkupdatemodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L292"
+    },
+    {
+      "caller_nid": "feedlist_bulkupdatemodal",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L293"
+    },
+    {
+      "caller_nid": "feedlist_bulkupdatemodal",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L295"
+    },
+    {
+      "caller_nid": "feedlist_bulkupdatemodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L330"
+    },
+    {
+      "caller_nid": "feedlist_bulkupdatemodal",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L342"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L353"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L354"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L355"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L356"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L357"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "split",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L358"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L358"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L360"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L361"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L362"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L363"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L364"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useForm",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L365"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L366"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useState",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L367"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useScreenWidth",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L369"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useFeedOperations",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L370"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useNavigate",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L372"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useEffect",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L374"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "filter",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L398"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L400"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L436"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L447"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L464"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L475"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "useMemo",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L510"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L540"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L552"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L553"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L554"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "map",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L563"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L579"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L586"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L590"
+    },
+    {
+      "caller_nid": "feedlist_feedlist",
+      "callee": "getSelectedFeeds",
+      "source_file": "src\\components\\Settings\\FeedList.jsx",
+      "source_location": "L599"
+    }
+  ]
+}

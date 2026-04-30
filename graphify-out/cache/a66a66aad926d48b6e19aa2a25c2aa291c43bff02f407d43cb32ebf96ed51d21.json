@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "robots_robots_txt",
+      "label": "Robots.txt",
+      "file_type": "document",
+      "source_file": "public\\robots.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "robots_all_user_agents",
+      "label": "All User Agents",
+      "file_type": "document",
+      "source_file": "public\\robots.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "robots_allow_all_crawling",
+      "label": "Allow All Crawling",
+      "file_type": "document",
+      "source_file": "public\\robots.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "robots_robotstxt_org_spec",
+      "label": "Robots.txt Specification",
+      "file_type": "document",
+      "source_file": "public\\robots.txt",
+      "source_location": null,
+      "source_url": "https://www.robotstxt.org/robotstxt.html",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "robots_robots_txt",
+      "target": "robots_all_user_agents",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public\\robots.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "robots_robots_txt",
+      "target": "robots_robotstxt_org_spec",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.99,
+      "source_file": "public\\robots.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "robots_robots_txt",
+      "target": "robots_allow_all_crawling",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public\\robots.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "global_allow_crawling_policy",
+      "label": "Global Allow Crawling Policy",
+      "nodes": ["robots_robots_txt", "robots_all_user_agents", "robots_allow_all_crawling"],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.82,
+      "source_file": "public\\robots.txt"
+    }
+  ]
+}

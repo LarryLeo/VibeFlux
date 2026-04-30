@@ -2,7 +2,7 @@ import { Divider, Tag, Typography } from "@arco-design/web-react"
 import { useStore } from "@nanostores/react"
 import ReactHtmlParser, { domToReact } from "html-react-parser"
 import { littlefoot } from "littlefoot"
-import { forwardRef, useEffect, useRef } from "react"
+import { forwardRef, useCallback, useEffect, useMemo, useRef } from "react"
 import { useNavigate } from "react-router"
 import SimpleBar from "simplebar-react"
 import Lightbox from "yet-another-react-lightbox"
@@ -19,6 +19,7 @@ import ImageOverlayButton from "./ImageOverlayButton"
 import CustomLink from "@/components/ui/CustomLink"
 import FadeTransition from "@/components/ui/FadeTransition"
 import PlyrPlayer from "@/components/ui/PlyrPlayer"
+import { polyglotState } from "@/hooks/useLanguage"
 import usePhotoSlider from "@/hooks/usePhotoSlider"
 import useScreenWidth from "@/hooks/useScreenWidth"
 import {
@@ -54,7 +55,7 @@ const handleLinkWithImage = (node, imageSources, togglePhotoSlider) => {
     }
 
     // Single image case
-    const index = imageSources.indexOf(imgNodes[0].attribs.src)
+    const index = imageSources.findIndex((image) => image.src === imgNodes[0].attribs.src)
     return (
       <ImageOverlayButton
         index={index}
@@ -84,7 +85,7 @@ const handleImage = (node, imageSources, togglePhotoSlider) => {
     return bskyVideoPlayer
   }
 
-  const index = imageSources.indexOf(node.attribs.src)
+  const index = imageSources.findIndex((image) => image.src === node.attribs.src)
   return <ImageOverlayButton index={index} node={node} togglePhotoSlider={togglePhotoSlider} />
 }
 
@@ -329,11 +330,12 @@ const getHtmlParserOptions = (imageSources, togglePhotoSlider) => {
   return options
 }
 
-const ArticleDetail = forwardRef((_, ref) => {
+const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
   const navigate = useNavigate()
   const { isBelowMedium } = useScreenWidth()
 
   const { activeContent } = useStore(contentState)
+  const { polyglot } = useStore(polyglotState)
   const {
     articleWidth,
     edgeToEdgeImages,
@@ -355,19 +357,33 @@ const ArticleDetail = forwardRef((_, ref) => {
     }
   }
 
-  const togglePhotoSlider = (index) => {
-    setSelectedIndex(index)
-    setIsPhotoSliderVisible((prev) => !prev)
-  }
+  const togglePhotoSlider = useCallback(
+    (index) => {
+      setSelectedIndex(index)
+      setIsPhotoSliderVisible((prev) => !prev)
+    },
+    [setSelectedIndex, setIsPhotoSliderVisible],
+  )
 
   const getLightboxAnimationConfig = () => {
     return lightboxSlideAnimation ? { fade: 250 } : { fade: 250, navigation: 0 }
   }
 
-  const imageSources = extractImageSources(activeContent.content)
-  const htmlParserOptions = getHtmlParserOptions(imageSources, togglePhotoSlider)
+  const imageSources = useMemo(
+    () => extractImageSources(activeContent.content),
+    [activeContent.content],
+  )
 
-  const parsedHtml = ReactHtmlParser(activeContent.content, htmlParserOptions)
+  const htmlParserOptions = useMemo(
+    () => getHtmlParserOptions(imageSources, togglePhotoSlider),
+    [imageSources, togglePhotoSlider],
+  )
+
+  const parsedHtml = useMemo(
+    () => ReactHtmlParser(activeContent.content, htmlParserOptions),
+    [activeContent.content, htmlParserOptions],
+  )
+
   const { id: categoryId, title: categoryTitle } = activeContent.feed.category
   const { id: feedId, title: feedTitle } = activeContent.feed
 
@@ -410,7 +426,12 @@ const ArticleDetail = forwardRef((_, ref) => {
         <FadeTransition y={20}>
           <div
             className="article-header"
-            style={{ maxWidth: getResponsiveMaxWidth(), textAlign: titleAlignment }}
+            style={{
+              maxWidth: getResponsiveMaxWidth(),
+              textAlign: titleAlignment,
+              fontFamily: fontFamily,
+              fontSize: `${fontSize}rem`,
+            }}
           >
             <Typography.Title
               className="article-title"
@@ -446,6 +467,33 @@ const ArticleDetail = forwardRef((_, ref) => {
               {generateReadingTime(activeContent.reading_time)}
             </Typography.Text>
             <Divider />
+            {(isAiSummaryLoading || aiSummary?.length > 0) && (
+              <div className="article-summary">
+                <div className="article-summary-label">
+                  {polyglot.t("article_card.ai_summary_label")}
+                </div>
+                {isAiSummaryLoading ? (
+                  <Typography.Paragraph
+                    className="article-summary-loading"
+                    style={{ fontFamily: "inherit", fontSize: "inherit", lineHeight: "inherit" }}
+                    type="secondary"
+                  >
+                    {polyglot.t("article_card.ai_summary_loading_message")}
+                  </Typography.Paragraph>
+                ) : (
+                  <div className="article-summary-content">
+                    {aiSummary.map((item, index) => (
+                      <Typography.Paragraph
+                        key={`${activeContent.id}-summary-${index}`}
+                        className="article-summary-paragraph"
+                      >
+                        {item}
+                      </Typography.Paragraph>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
           <div
             key={activeContent.id}
@@ -476,7 +524,7 @@ const ArticleDetail = forwardRef((_, ref) => {
               index={selectedIndex}
               open={isPhotoSliderVisible}
               plugins={[Counter, Fullscreen, Zoom]}
-              slides={imageSources.map((item) => ({ src: item }))}
+              slides={imageSources}
               on={{
                 view: ({ index }) => setSelectedIndex(index),
               }}

@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_loading_js",
+      "label": "loading.js",
+      "file_type": "code",
+      "source_file": "src\\utils\\loading.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "loading_hidespinner",
+      "label": "hideSpinner()",
+      "file_type": "code",
+      "source_file": "src\\utils\\loading.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_loading_js",
+      "target": "loading_hidespinner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\loading.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "loading_hidespinner",
+      "callee": "querySelector",
+      "source_file": "src\\utils\\loading.js",
+      "source_location": "L2"
+    }
+  ]
+}

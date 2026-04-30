@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "src_routes_jsx",
+      "label": "routes.jsx",
+      "file_type": "code",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_routes_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_app",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_all",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_category",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_errorpage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_feed",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_history",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_login",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_routerprotect",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_starred",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_pages_today",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_jsx",
+      "target": "src_store_settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\routes.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

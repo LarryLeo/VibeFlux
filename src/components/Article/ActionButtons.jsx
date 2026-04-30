@@ -22,6 +22,7 @@ import { memo, useState } from "react"
 
 import ArticleTOC from "./ArticleTOC"
 
+import OpenAiFillIcon from "@/components/Icons/OpenAiFillIcon"
 import CustomTooltip from "@/components/ui/CustomTooltip"
 import useEntryActions from "@/hooks/useEntryActions"
 import useKeyHandlers from "@/hooks/useKeyHandlers"
@@ -48,6 +49,7 @@ const DesktopButtons = memo(
       <div className="right-side">
         {commonButtons.status}
         {commonButtons.star}
+        {commonButtons.summary}
         {commonButtons.fetch}
         {commonButtons.toc}
         {hasIntegrations && (
@@ -69,6 +71,7 @@ const MobileButtons = memo(({ commonButtons, hasHeadings }) => (
   <div className="mobile-buttons">
     {commonButtons.status}
     {commonButtons.star}
+    {commonButtons.summary}
     {commonButtons.prev}
     {commonButtons.close}
     {commonButtons.next}
@@ -79,7 +82,7 @@ const MobileButtons = memo(({ commonButtons, hasHeadings }) => (
 ))
 MobileButtons.displayName = "MobileButtons"
 
-const ActionButtons = () => {
+const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
   const { activeContent } = useStore(contentState)
   const { hasIntegrations } = useStore(dataState)
   const { polyglot } = useStore(polyglotState)
@@ -224,6 +227,23 @@ const ActionButtons = () => {
           icon={isStarred ? <IconStarFill style={{ color: "#ffcd00" }} /> : <IconStar />}
           shape="circle"
           onClick={() => handleToggleStarred(activeContent)}
+        />
+      </CustomTooltip>
+    ),
+    summary: (
+      <CustomTooltip
+        mini
+        content={
+          isAiSummaryLoading
+            ? polyglot.t("article_card.ai_summary_loading_tooltip")
+            : polyglot.t("article_card.ai_summary_tooltip")
+        }
+      >
+        <Button
+          icon={<OpenAiFillIcon />}
+          loading={isAiSummaryLoading}
+          shape="circle"
+          onClick={onGenerateAiSummary}
         />
       </CustomTooltip>
     ),

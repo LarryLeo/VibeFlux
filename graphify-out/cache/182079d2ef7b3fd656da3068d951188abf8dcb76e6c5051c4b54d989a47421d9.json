@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "src_apis_feeds_js",
+      "label": "feeds.js",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "feeds_getfeeds",
+      "label": "getFeeds()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "feeds_getcounters",
+      "label": "getCounters()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L5"
+    },
+    {
+      "id": "feeds_refreshfeed",
+      "label": "refreshFeed()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "feeds_refreshallfeed",
+      "label": "refreshAllFeed()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "feeds_addfeed",
+      "label": "addFeed()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "feeds_deletefeed",
+      "label": "deleteFeed()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L18"
+    },
+    {
+      "id": "feeds_updatefeed",
+      "label": "updateFeed()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L20"
+    },
+    {
+      "id": "feeds_markfeedasread",
+      "label": "markFeedAsRead()",
+      "file_type": "code",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L34"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_apis_feeds_js",
+      "target": "src_apis_ofetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_getfeeds",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_getcounters",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_refreshfeed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_refreshallfeed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_addfeed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_deletefeed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_updatefeed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_feeds_js",
+      "target": "feeds_markfeedasread",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L34",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "feeds_getfeeds",
+      "callee": "get",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L3"
+    },
+    {
+      "caller_nid": "feeds_getcounters",
+      "callee": "get",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L5"
+    },
+    {
+      "caller_nid": "feeds_refreshfeed",
+      "callee": "raw",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "feeds_refreshallfeed",
+      "callee": "raw",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "feeds_addfeed",
+      "callee": "post",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "feeds_deletefeed",
+      "callee": "raw",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "feeds_updatefeed",
+      "callee": "put",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "feeds_markfeedasread",
+      "callee": "put",
+      "source_file": "src\\apis\\feeds.js",
+      "source_location": "L34"
+    }
+  ]
+}

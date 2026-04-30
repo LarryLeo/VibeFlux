@@ -1,5 +1,5 @@
 import { useStore } from "@nanostores/react"
-import { useEffect, useRef } from "react"
+import { useCallback, useEffect, useRef } from "react"
 
 import {
   contentState,
@@ -36,7 +36,7 @@ const useArticleList = (info, getEntries) => {
 
   const isLoading = useRef(false)
 
-  const fetchArticleList = async (getEntries) => {
+  const fetchArticleList = useCallback(async () => {
     if (isLoading.current) {
       return
     }
@@ -109,13 +109,13 @@ const useArticleList = (info, getEntries) => {
       isLoading.current = false
       setIsArticleListReady(true)
     }
-  }
+  }, [filterDate, filterString, getEntries, info.from, info.id, showStatus])
 
   useEffect(() => {
     if (isAppDataReady) {
-      fetchArticleList(getEntries)
+      fetchArticleList()
     }
-  }, [isAppDataReady])
+  }, [fetchArticleList, isAppDataReady])
 
   return { fetchArticleList }
 }

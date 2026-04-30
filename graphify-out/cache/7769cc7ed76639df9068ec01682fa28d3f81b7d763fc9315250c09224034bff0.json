@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_settings_appearance_jsx",
+      "label": "Appearance.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "appearance_handleconfigchange",
+      "label": "handleConfigChange()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "appearance_appearance",
+      "label": "Appearance()",
+      "file_type": "code",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L19"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "src_components_settings_settingitem",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "colors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "src_components_settings_appearance_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "appearance_handleconfigchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_settings_appearance_jsx",
+      "target": "appearance_appearance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "appearance_handleconfigchange",
+      "callee": "updateSettings",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L13"
+    },
+    {
+      "caller_nid": "appearance_handleconfigchange",
+      "callee": "applyColor",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "useStore",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "map",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "keys",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L87"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L112"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L123"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "appearance_appearance",
+      "callee": "t",
+      "source_file": "src\\components\\Settings\\Appearance.jsx",
+      "source_location": "L136"
+    }
+  ]
+}

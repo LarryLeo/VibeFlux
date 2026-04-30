@@ -6,6 +6,8 @@ import { contentState } from "@/store/contentState"
 import "plyr/dist/plyr.css"
 import "./PlyrPlayer.css"
 
+const EMPTY_OBJECT = {}
+const noop = () => {}
 const PlyrPromise = import("plyr")
 
 const MEDIA_TYPES = {
@@ -94,12 +96,12 @@ const PlyrPlayer = ({
   src,
   sourceType,
   elementType = "video",
-  plyrOptions = {},
+  plyrOptions = EMPTY_OBJECT,
   poster = "",
-  style = {},
+  style = EMPTY_OBJECT,
   enclosure = null,
-  onPlayerInit = () => {},
-  onError = () => {},
+  onPlayerInit = noop,
+  onError = noop,
 }) => {
   const { activeContent } = useStore(contentState)
 
@@ -168,7 +170,7 @@ const PlyrPlayer = ({
       playerRef.current = null
       hlsRef.current = null
     }
-  }, [src])
+  }, [activeContent, elementType, enclosure, onError, onPlayerInit, plyrOptions, sourceType, src])
 
   const renderMedia = () => {
     const mediaProps = {

@@ -5,6 +5,7 @@ import {
   IconFolder,
   IconSkin,
   IconStorage,
+  IconThunderbolt,
 } from "@arco-design/web-react/icon"
 import { useStore } from "@nanostores/react"
 import SimpleBar from "simplebar-react"
@@ -14,6 +15,7 @@ import CategoryList from "./CategoryList"
 import FeedList from "./FeedList"
 import General from "./General"
 import Hotkeys from "./Hotkeys"
+import LLMSettings from "./LLMSettings"
 
 import { polyglotState } from "@/hooks/useLanguage"
 import useScreenWidth from "@/hooks/useScreenWidth"
@@ -96,6 +98,17 @@ const SettingsTabs = ({ activeTab, onTabChange }) => {
           }
         >
           <Appearance />
+        </Tabs.TabPane>
+        <Tabs.TabPane
+          key="6"
+          title={
+            <CustomTabTitle
+              icon={<IconThunderbolt style={{ fontSize: "20px" }} />}
+              title={polyglot.t("settings.ai")}
+            />
+          }
+        >
+          <LLMSettings />
         </Tabs.TabPane>
         {!isBelowMedium && (
           <Tabs.TabPane

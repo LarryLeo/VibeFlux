@@ -1,0 +1,272 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_usekeyhandlers_js",
+      "label": "useKeyHandlers.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "usekeyhandlers_findadjacentunreadentry",
+      "label": "findAdjacentUnreadEntry()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L19"
+    },
+    {
+      "id": "usekeyhandlers_usekeyhandlers",
+      "label": "useKeyHandlers()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L28"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "src_hooks_uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "src_hooks_usemodaltoggle",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "src_hooks_usephotoslider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "usecontentcontext",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "images",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "usekeyhandlers_findadjacentunreadentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usekeyhandlers_js",
+      "target": "usekeyhandlers_usekeyhandlers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L28",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usekeyhandlers_findadjacentunreadentry",
+      "callee": "toReversed",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "usekeyhandlers_findadjacentunreadentry",
+      "callee": "slice",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "usekeyhandlers_findadjacentunreadentry",
+      "callee": "slice",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "usekeyhandlers_findadjacentunreadentry",
+      "callee": "find",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useContentContext",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "usePhotoSlider",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "useModalToggle",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withActiveContent",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withPhotoSliderCheck",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withPhotoSliderCheck",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withPhotoSliderCheck",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withPhotoSliderCheck",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withActiveContent",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L120"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withActiveContent",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withActiveContent",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withActiveContent",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L137"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withActiveContent",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "usekeyhandlers_usekeyhandlers",
+      "callee": "withActiveContent",
+      "source_file": "src\\hooks\\useKeyHandlers.js",
+      "source_location": "L145"
+    }
+  ]
+}

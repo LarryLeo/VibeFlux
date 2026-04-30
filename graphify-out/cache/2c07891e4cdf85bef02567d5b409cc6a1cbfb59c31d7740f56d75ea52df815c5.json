@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_sidebar_profile_jsx",
+      "label": "Profile.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "profile_profile",
+      "label": "Profile()",
+      "file_type": "code",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L27"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "usemodaltoggle",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "authstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "datastate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "feediconsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "src_components_sidebar_profile_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sidebar_profile_jsx",
+      "target": "profile_profile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L27",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "profile_profile",
+      "callee": "useNavigate",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "useStore",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "useModalToggle",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L116"
+    },
+    {
+      "caller_nid": "profile_profile",
+      "callee": "t",
+      "source_file": "src\\components\\Sidebar\\Profile.jsx",
+      "source_location": "L120"
+    }
+  ]
+}

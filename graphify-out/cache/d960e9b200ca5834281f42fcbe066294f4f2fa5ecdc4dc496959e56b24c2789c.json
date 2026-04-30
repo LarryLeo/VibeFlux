@@ -1,0 +1,557 @@
+{
+  "nodes": [
+    {
+      "id": "src_apis_entries_js",
+      "label": "entries.js",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "entries_getentry",
+      "label": "getEntry()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "entries_updateentriesstatus",
+      "label": "updateEntriesStatus()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "entries_toggleentrystarred",
+      "label": "toggleEntryStarred()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "entries_getoriginalcontent",
+      "label": "getOriginalContent()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L18"
+    },
+    {
+      "id": "entries_savetothirdpartyservices",
+      "label": "saveToThirdPartyServices()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L24"
+    },
+    {
+      "id": "entries_addtimerangeparams",
+      "label": "addTimeRangeParams()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L27"
+    },
+    {
+      "id": "entries_adddatefilters",
+      "label": "addDateFilters()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L36"
+    },
+    {
+      "id": "entries_buildentriesurl",
+      "label": "buildEntriesUrl()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L44"
+    },
+    {
+      "id": "entries_getallentries",
+      "label": "getAllEntries()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L67"
+    },
+    {
+      "id": "entries_gettodayentries",
+      "label": "getTodayEntries()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L87"
+    },
+    {
+      "id": "entries_getstarredentries",
+      "label": "getStarredEntries()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L109"
+    },
+    {
+      "id": "entries_gethistoryentries",
+      "label": "getHistoryEntries()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L127"
+    },
+    {
+      "id": "entries_getcategoryentries",
+      "label": "getCategoryEntries()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L142"
+    },
+    {
+      "id": "entries_getfeedentries",
+      "label": "getFeedEntries()",
+      "file_type": "code",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L171"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_apis_entries_js",
+      "target": "src_apis_ofetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "date",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_getentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_updateentriesstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_toggleentrystarred",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_getoriginalcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_savetothirdpartyservices",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_addtimerangeparams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_adddatefilters",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_buildentriesurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_getallentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_gettodayentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_getstarredentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_gethistoryentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_getcategoryentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "src_apis_entries_js",
+      "target": "entries_getfeedentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L171",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_adddatefilters",
+      "target": "entries_addtimerangeparams",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_buildentriesurl",
+      "target": "entries_adddatefilters",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_getallentries",
+      "target": "entries_buildentriesurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_gettodayentries",
+      "target": "entries_buildentriesurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_getstarredentries",
+      "target": "entries_buildentriesurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_gethistoryentries",
+      "target": "entries_buildentriesurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_getcategoryentries",
+      "target": "entries_buildentriesurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "entries_getfeedentries",
+      "target": "entries_buildentriesurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L188",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "entries_getentry",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "entries_updateentriesstatus",
+      "callee": "put",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "entries_toggleentrystarred",
+      "callee": "put",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "entries_getoriginalcontent",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "entries_getoriginalcontent",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "entries_savetothirdpartyservices",
+      "callee": "raw",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "entries_addtimerangeparams",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "entries_addtimerangeparams",
+      "callee": "append",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "entries_addtimerangeparams",
+      "callee": "getTimestamp",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "entries_addtimerangeparams",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "entries_addtimerangeparams",
+      "callee": "append",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "entries_addtimerangeparams",
+      "callee": "getDayEndTimestamp",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "entries_buildentriesurl",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "entries_buildentriesurl",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "entries_buildentriesurl",
+      "callee": "append",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "entries_getallentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "entries_getallentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "entries_getallentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "entries_getallentries",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "entries_gettodayentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "entries_gettodayentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "entries_gettodayentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "entries_gettodayentries",
+      "callee": "get24HoursAgoTimestamp",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "entries_gettodayentries",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "entries_getstarredentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "entries_getstarredentries",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "entries_gethistoryentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "entries_gethistoryentries",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "entries_getcategoryentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "entries_getcategoryentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L149"
+    },
+    {
+      "caller_nid": "entries_getcategoryentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L150"
+    },
+    {
+      "caller_nid": "entries_getcategoryentries",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L168"
+    },
+    {
+      "caller_nid": "entries_getfeedentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L172"
+    },
+    {
+      "caller_nid": "entries_getfeedentries",
+      "callee": "getSettings",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L173"
+    },
+    {
+      "caller_nid": "entries_getfeedentries",
+      "callee": "get",
+      "source_file": "src\\apis\\entries.js",
+      "source_location": "L188"
+    }
+  ]
+}

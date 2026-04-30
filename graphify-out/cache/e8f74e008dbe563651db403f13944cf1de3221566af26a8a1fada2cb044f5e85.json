@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "src_components_article_loadingcards_jsx",
+      "label": "LoadingCards.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "loadingcards_loadingcard",
+      "label": "LoadingCard()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "loadingcards_loadingcards",
+      "label": "LoadingCards()",
+      "file_type": "code",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L17"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_components_article_loadingcards_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_loadingcards_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_loadingcards_jsx",
+      "target": "contentstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_loadingcards_jsx",
+      "target": "src_components_article_loadingcards_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_loadingcards_jsx",
+      "target": "loadingcards_loadingcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_article_loadingcards_jsx",
+      "target": "loadingcards_loadingcards",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L17",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "loadingcards_loadingcards",
+      "callee": "useStore",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "loadingcards_loadingcards",
+      "callee": "from",
+      "source_file": "src\\components\\Article\\LoadingCards.jsx",
+      "source_location": "L22"
+    }
+  ]
+}

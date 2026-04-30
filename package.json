@@ -10,8 +10,6 @@
     "format:check": "prettier --check .",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "prepare": "simple-git-hooks",
-    "prebuild": "node src/scripts/version-info.js",
     "update-fonts": "node scripts/update-fonts.js"
   },
   "dependencies": {
@@ -62,25 +60,11 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "eslint-plugin-unicorn": "^64.0.0",
     "globals": "^17.4.0",
-    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
     "react-compiler-runtime": "19.1.0-rc.3",
     "rollup-plugin-visualizer": "^7.0.1",
-    "simple-git-hooks": "2.13.1",
     "vite": "^7.3.1",
     "vite-plugin-pwa": "^1.2.0",
     "workbox-window": "^7.4.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,ts,mjs,jsx,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,jsonc,css,md}": [
-      "prettier --write"
-    ]
   }
 }

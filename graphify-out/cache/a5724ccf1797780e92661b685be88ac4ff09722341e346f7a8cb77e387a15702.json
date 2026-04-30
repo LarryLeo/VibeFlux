@@ -1,0 +1,352 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_login_jsx",
+      "label": "Login.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "login_login",
+      "label": "Login()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L27"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_login_jsx",
+      "target": "web_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "useform",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "icon",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "ofetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "uselanguage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "usetheme",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "authstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "settingsstate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "form",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "loading",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "src_pages_login_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_login_jsx",
+      "target": "login_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L27",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "login_login",
+      "callee": "useLanguage",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useTheme",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useStore",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useStore",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useStore",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useForm",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useSearchParams",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useMemo",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useLocation",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useNavigate",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useEffect",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L82"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useEffect",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "isValidAuth",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L122"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L137"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L145"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L162"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L168"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L176"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L190"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L192"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L200"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L201"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L204"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "t",
+      "source_file": "src\\pages\\Login.jsx",
+      "source_location": "L209"
+    }
+  ]
+}

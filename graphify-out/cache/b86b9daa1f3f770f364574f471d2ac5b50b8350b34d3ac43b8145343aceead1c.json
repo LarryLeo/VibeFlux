@@ -1,0 +1,64 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_usephotoslider_js",
+      "label": "usePhotoSlider.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\usePhotoSlider.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "usephotoslider_usephotoslider",
+      "label": "usePhotoSlider()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\usePhotoSlider.js",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_usephotoslider_js",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\usePhotoSlider.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usephotoslider_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\usePhotoSlider.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usephotoslider_js",
+      "target": "nanostores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\usePhotoSlider.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_usephotoslider_js",
+      "target": "usephotoslider_usephotoslider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\usePhotoSlider.js",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usephotoslider_usephotoslider",
+      "callee": "useStore",
+      "source_file": "src\\hooks\\usePhotoSlider.js",
+      "source_location": "L12"
+    }
+  ]
+}

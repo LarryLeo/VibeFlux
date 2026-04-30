@@ -1,6 +1,7 @@
 import { Message, Notification } from "@arco-design/web-react"
 import { useStore } from "@nanostores/react"
 import Confetti from "canvas-confetti"
+import { useCallback } from "react"
 
 import {
   getOriginalContent,
@@ -88,54 +89,63 @@ const useEntryActions = () => {
   const { activeContent } = useStore(contentState)
   const { polyglot } = useStore(polyglotState)
 
-  const handleEntryStarredUpdate = (entry, newStarred) => {
-    if (newStarred) {
-      setStarredCount((prev) => prev + 1)
-      Confetti({
-        particleCount: 100,
-        angle: 120,
-        spread: 70,
-        origin: { x: 1, y: 1 },
+  const handleEntryStarredUpdate = useCallback(
+    (entry, newStarred) => {
+      if (newStarred) {
+        setStarredCount((prev) => prev + 1)
+        Confetti({
+          particleCount: 100,
+          angle: 120,
+          spread: 70,
+          origin: { x: 1, y: 1 },
+        })
+      } else {
+        setStarredCount((prev) => Math.max(0, prev - 1))
+      }
+
+      const updatedEntry = { ...entry, starred: newStarred }
+      if (activeContent) {
+        setActiveContent(updatedEntry)
+      }
+      setEntries((prev) => updateEntries(prev, [updatedEntry]))
+    },
+    [activeContent],
+  )
+
+  const handleToggleStatus = useCallback(
+    async (entry) => {
+      const prevStatus = entry.status
+      const newStatus = prevStatus === "read" ? "unread" : "read"
+      handleEntryStatusUpdate(entry, newStatus)
+
+      updateEntriesStatus([entry.id], newStatus).catch(() => {
+        Message.error(
+          newStatus === "read"
+            ? polyglot.t("actions.mark_as_read_error")
+            : polyglot.t("actions.mark_as_unread_error"),
+        )
+        handleEntryStatusUpdate(entry, prevStatus)
       })
-    } else {
-      setStarredCount((prev) => Math.max(0, prev - 1))
-    }
+    },
+    [polyglot],
+  )
 
-    const updatedEntry = { ...entry, starred: newStarred }
-    if (activeContent) {
-      setActiveContent(updatedEntry)
-    }
-    setEntries((prev) => updateEntries(prev, [updatedEntry]))
-  }
+  const handleToggleStarred = useCallback(
+    async (entry) => {
+      const newStarred = !entry.starred
+      handleEntryStarredUpdate(entry, newStarred)
 
-  const handleToggleStatus = async (entry) => {
-    const prevStatus = entry.status
-    const newStatus = prevStatus === "read" ? "unread" : "read"
-    handleEntryStatusUpdate(entry, newStatus)
+      toggleEntryStarred(entry.id).catch(() => {
+        Message.error(
+          newStarred ? polyglot.t("actions.star_error") : polyglot.t("actions.unstar_error"),
+        )
+        handleEntryStarredUpdate(entry, !newStarred)
+      })
+    },
+    [handleEntryStarredUpdate, polyglot],
+  )
 
-    updateEntriesStatus([entry.id], newStatus).catch(() => {
-      Message.error(
-        newStatus === "read"
-          ? polyglot.t("actions.mark_as_read_error")
-          : polyglot.t("actions.mark_as_unread_error"),
-      )
-      handleEntryStatusUpdate(entry, prevStatus)
-    })
-  }
-
-  const handleToggleStarred = async (entry) => {
-    const newStarred = !entry.starred
-    handleEntryStarredUpdate(entry, newStarred)
-
-    toggleEntryStarred(entry.id).catch(() => {
-      Message.error(
-        newStarred ? polyglot.t("actions.star_error") : polyglot.t("actions.unstar_error"),
-      )
-      handleEntryStarredUpdate(entry, !newStarred)
-    })
-  }
-
-  const handleFetchContent = async () => {
+  const handleFetchContent = useCallback(async () => {
     try {
       const response = await getOriginalContent(activeContent.id)
       Message.success(polyglot.t("actions.fetched_content_success"))
@@ -146,28 +156,31 @@ const useEntryActions = () => {
       console.error("Failed to fetch content:", error)
       Message.error(polyglot.t("actions.fetched_content_error"))
     }
-  }
+  }, [activeContent, polyglot])
 
-  const handleSaveToThirdPartyServices = async (entry) => {
-    try {
-      const response = await saveToThirdPartyServices(entry.id)
-      if (response.status === 202) {
-        Notification.success({
-          title: polyglot.t("actions.saved_to_third-party_services_success"),
-        })
-      } else {
+  const handleSaveToThirdPartyServices = useCallback(
+    async (entry) => {
+      try {
+        const response = await saveToThirdPartyServices(entry.id)
+        if (response.status === 202) {
+          Notification.success({
+            title: polyglot.t("actions.saved_to_third-party_services_success"),
+          })
+        } else {
+          Notification.error({
+            title: polyglot.t("actions.saved_to_third-party_services_error"),
+          })
+        }
+      } catch (error) {
+        console.error("Failed to save to third-party services:", error)
         Notification.error({
           title: polyglot.t("actions.saved_to_third-party_services_error"),
+          content: error.message,
         })
       }
-    } catch (error) {
-      console.error("Failed to save to third-party services:", error)
-      Notification.error({
-        title: polyglot.t("actions.saved_to_third-party_services_error"),
-        content: error.message,
-      })
-    }
-  }
+    },
+    [polyglot],
+  )
 
   return {
     handleEntryStatusUpdate,
