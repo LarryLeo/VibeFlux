@@ -10,8 +10,8 @@ import { contentState } from "@/store/contentState"
 import { settingsState } from "@/store/settingsState"
 
 // An article is considered "read past" once its bottom edge has crossed above
-// this fraction of the scroll container's visible height.
-const READING_LINE_RATIO = 0.3
+// the scroll container's top edge (i.e. fully exited the viewport).
+const READING_LINE_RATIO = 0
 
 /**
  * Robustly marks unread articles as read when the user scrolls past them.
