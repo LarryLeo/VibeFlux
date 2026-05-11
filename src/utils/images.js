@@ -53,10 +53,8 @@ export const extractImageSources = (htmlOrDoc) => {
         : undefined
 
       return {
-        height: Number.isFinite(height) ? height : undefined,
         src,
         srcSet: srcSet?.length ? srcSet : undefined,
-        width: Number.isFinite(width) ? width : undefined,
       }
     })
     .filter((image) => image.src)
