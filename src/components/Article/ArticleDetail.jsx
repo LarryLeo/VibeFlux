@@ -396,6 +396,16 @@ const ArticleDetail = forwardRef(({ aiSummary, isAiSummaryLoading }, ref) => {
     return `${articleWidth}ch`
   }
 
+  // Reset lightbox state when switching articles or unmounting
+  useEffect(() => {
+    setIsPhotoSliderVisible(false)
+    setSelectedIndex(0)
+    return () => {
+      setIsPhotoSliderVisible(false)
+      setSelectedIndex(0)
+    }
+  }, [activeContent.id, setIsPhotoSliderVisible, setSelectedIndex])
+
   // pretty footnotes
   useEffect(() => {
     const lf = littlefoot()
