@@ -305,9 +305,33 @@ p {
 }
 
 .article-content code {
-  background-color: #282c34;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
   border-radius: var(--border-radius-small);
+  color: #24292f;
   padding: 0.2em 0.4em;
+}
+
+body[arco-theme="dark"] .article-content code {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+}
+
+.article-content pre code {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
+}
+
+body[arco-theme="dark"] .article-content pre code {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
 }
 
 /*code 相关样式 - 表格 */

@@ -2,8 +2,8 @@ import { Button, Message, Select } from "@arco-design/web-react"
 import { IconCopy } from "@arco-design/web-react/icon"
 import { useStore } from "@nanostores/react"
 import hljs from "highlight.js"
-import { useCallback, useEffect, useState } from "react"
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs"
+import { useCallback, useEffect, useMemo, useState } from "react"
+import { atomOneDark, github } from "react-syntax-highlighter/dist/esm/styles/hljs"
 
 import CustomTooltip from "@/components/ui/CustomTooltip"
 import { polyglotState } from "@/hooks/useLanguage"
@@ -15,6 +15,7 @@ const CodeBlock = ({ children }) => {
   const { polyglot } = useStore(polyglotState)
 
   const [language, setLanguage] = useState("plaintext")
+  const [isDarkTheme, setIsDarkTheme] = useState(false)
 
   const copyToClipboard = useCallback(() => {
     navigator.clipboard
@@ -31,15 +32,41 @@ const CodeBlock = ({ children }) => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       const detectedLanguage = hljs.highlightAuto(children).language
+
       if (SUPPORTED_LANGUAGES.includes(detectedLanguage)) {
         setLanguage(detectedLanguage)
       } else {
         console.info("detectedLanguage not supported:", detectedLanguage)
+        setLanguage("plaintext")
       }
     }, ANIMATION_DURATION_MS)
 
     return () => clearTimeout(timeoutId)
   }, [children])
+
+  useEffect(() => {
+    if (!globalThis.document?.body) {
+      return
+    }
+
+    const updateTheme = () => {
+      setIsDarkTheme(globalThis.document.body.getAttribute("arco-theme") === "dark")
+    }
+
+    updateTheme()
+
+    const observer = new MutationObserver(updateTheme)
+    observer.observe(globalThis.document.body, {
+      attributeFilter: ["arco-theme"],
+      attributes: true,
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
+  const highlighterStyle = useMemo(() => {
+    return isDarkTheme ? atomOneDark : github
+  }, [isDarkTheme])
 
   return (
     <div className="code-block-container">
@@ -47,7 +74,13 @@ const CodeBlock = ({ children }) => {
         <LanguageSelector language={language} setLanguage={setLanguage} />
         <CopyButton onClick={copyToClipboard} />
       </div>
-      <SyntaxHighlighter language={language} showLineNumbers={true} style={atomOneDark}>
+      <SyntaxHighlighter
+        customStyle={{ background: "transparent", margin: 0, padding: "14px 16px" }}
+        language={language}
+        showLineNumbers={false}
+        style={highlighterStyle}
+        wrapLongLines={true}
+      >
         {code}
       </SyntaxHighlighter>
     </div>

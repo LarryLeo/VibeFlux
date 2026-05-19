@@ -1,6 +1,25 @@
 .code-block-container {
+  --code-block-bg: #f6f8fa;
+  --code-block-border: #d0d7de;
+  --code-block-header-bg: #f3f4f6;
+  --code-block-header-border: #d8dee4;
+  --code-block-button-bg: #ffffff;
+  --code-block-button-border: #d0d7de;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--code-block-border);
+  border-radius: 10px;
+  background: var(--code-block-bg);
+  overflow: hidden;
+}
+
+body[arco-theme="dark"] .code-block-container {
+  --code-block-bg: #0d1117;
+  --code-block-border: #30363d;
+  --code-block-header-bg: #161b22;
+  --code-block-header-border: #30363d;
+  --code-block-button-bg: #21262d;
+  --code-block-button-border: #3b434c;
 }
 
 .code-block-container code {
@@ -12,11 +31,29 @@
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
-  background: inherit;
+  background: var(--code-block-header-bg);
+  border-bottom: 1px solid var(--code-block-header-border);
+  padding: 8px 10px;
   z-index: 1;
-  margin-bottom: -12px;
 }
 
 .language-selector {
   width: auto;
+}
+
+.code-block-container pre {
+  margin: 0 !important;
+  overflow-x: auto;
+}
+
+.code-block-container .copy-button {
+  border: 1px solid var(--code-block-button-border);
+  background: var(--code-block-button-bg);
+}
+
+@media screen and (max-width: 768px) {
+  .code-block-header {
+    padding: 6px 8px;
+    gap: 6px;
+  }
 }
