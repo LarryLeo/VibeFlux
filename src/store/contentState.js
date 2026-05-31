@@ -19,6 +19,7 @@ const defaultValue = {
   infoId: null, // feed 或 category 的 id
   isArticleListReady: false, // 文章列表是否加载完成
   isArticleLoading: false, // 文章是否正在加载
+  originalContentLoadingEntryId: null, // 正在获取原文的文章 id
   loadMoreVisible: false, // 加载更多元素可见性
   total: 0, // 接口返回文章总数原始值，不受接口返回数据长度限制
 }
@@ -130,6 +131,7 @@ export const setInfoFrom = createSetter(contentState, "infoFrom")
 export const setInfoId = createSetter(contentState, "infoId")
 export const setIsArticleListReady = createSetter(contentState, "isArticleListReady")
 export const setIsArticleLoading = createSetter(contentState, "isArticleLoading")
+export const setOriginalContentLoadingEntryId = createSetter(contentState, "originalContentLoadingEntryId")
 export const setLoadMoreVisible = createSetter(contentState, "loadMoreVisible")
 export const setTotal = createSetter(contentState, "total")
 export const resetContent = () => contentState.set(defaultValue)

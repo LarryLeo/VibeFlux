@@ -10,7 +10,12 @@ import {
   updateEntriesStatus,
 } from "@/apis"
 import { polyglotState } from "@/hooks/useLanguage"
-import { contentState, setActiveContent, setEntries } from "@/store/contentState"
+import {
+  contentState,
+  setActiveContent,
+  setEntries,
+  setOriginalContentLoadingEntryId,
+} from "@/store/contentState"
 import {
   setHistoryCount,
   setStarredCount,
@@ -146,15 +151,31 @@ const useEntryActions = () => {
   )
 
   const handleFetchContent = useCallback(async () => {
+    if (!activeContent) {
+      return false
+    }
+
+    const { originalContentLoadingEntryId } = contentState.get()
+    if (originalContentLoadingEntryId === activeContent.id) {
+      return false
+    }
+
     try {
+      setOriginalContentLoadingEntryId(activeContent.id)
       const response = await getOriginalContent(activeContent.id)
       Message.success(polyglot.t("actions.fetched_content_success"))
       const newContent = response.content
       const newReadingTime = response.reading_time ?? activeContent.reading_time
       setActiveContent({ ...activeContent, content: newContent, readingTime: newReadingTime })
+      return true
     } catch (error) {
       console.error("Failed to fetch content:", error)
       Message.error(polyglot.t("actions.fetched_content_error"))
+      return false
+    } finally {
+      if (contentState.get().originalContentLoadingEntryId === activeContent.id) {
+        setOriginalContentLoadingEntryId(null)
+      }
     }
   }, [activeContent, polyglot])
 

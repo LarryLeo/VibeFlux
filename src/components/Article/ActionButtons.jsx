@@ -84,6 +84,7 @@ MobileButtons.displayName = "MobileButtons"
 
 const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
   const { activeContent } = useStore(contentState)
+  const { originalContentLoadingEntryId } = useStore(contentState)
   const { hasIntegrations } = useStore(dataState)
   const { polyglot } = useStore(polyglotState)
   const headings = useStore(articleHeadingsState)
@@ -125,6 +126,7 @@ const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
 
   const isUnread = activeContent.status === "unread"
   const isStarred = activeContent.starred
+  const isOriginalContentLoading = originalContentLoadingEntryId === activeContent.id
 
   const fontFamilyOptions = [
     { label: polyglot.t("appearance.font_family_system"), value: "system-ui" },
@@ -257,10 +259,13 @@ const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
         <Button
           disabled={isFetchedOriginal}
           icon={<IconCloudDownload />}
+          loading={isOriginalContentLoading}
           shape="circle"
           onClick={async () => {
-            await handleFetchContent()
-            setIsFetchedOriginal(true)
+            const isFetched = await handleFetchContent()
+            if (isFetched) {
+              setIsFetchedOriginal(true)
+            }
           }}
         />
       </CustomTooltip>
@@ -286,10 +291,12 @@ const ActionButtons = ({ isAiSummaryLoading, onGenerateAiSummary }) => {
             {isBelowMedium && hasHeadings && (
               <Menu.Item
                 key="fetch_original"
-                disabled={isFetchedOriginal}
+                disabled={isFetchedOriginal || isOriginalContentLoading}
                 onClick={async () => {
-                  await handleFetchContent()
-                  setIsFetchedOriginal(true)
+                  const isFetched = await handleFetchContent()
+                  if (isFetched) {
+                    setIsFetchedOriginal(true)
+                  }
                 }}
               >
                 <div className="settings-menu-item">
