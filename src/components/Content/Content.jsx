@@ -63,6 +63,7 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
   const [isSwipingLeft, setIsSwipingLeft] = useState(false)
   const [isSwipingRight, setIsSwipingRight] = useState(false)
   const aiSummaryRequestIdRef = useRef(0)
+  const aiSummaryLoadingMessageRef = useRef(null)
   const cardsRef = useRef(null)
 
   const location = useLocation()
@@ -111,6 +112,11 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
     [entries],
   )
 
+  const clearAiSummaryLoadingMessage = useCallback(() => {
+    aiSummaryLoadingMessageRef.current?.()
+    aiSummaryLoadingMessageRef.current = null
+  }, [])
+
   const handleGenerateAiSummary = useCallback(async () => {
     if (!activeContent) {
       return
@@ -133,7 +139,8 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
     try {
       setIsAiSummaryLoading(true)
       setAiSummary(null)
-      Message.loading({
+      clearAiSummaryLoadingMessage()
+      aiSummaryLoadingMessageRef.current = Message.loading({
         id,
         duration: 0,
         content: polyglot.t("article_card.ai_summary_loading_message"),
@@ -146,6 +153,7 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
       }
 
       setAiSummary(summary)
+      aiSummaryLoadingMessageRef.current = null
       Message.success({ id, content: polyglot.t("article_card.ai_summary_success_message") })
     } catch (error) {
       if (aiSummaryRequestIdRef.current !== currentRequestId) {
@@ -153,6 +161,7 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
       }
 
       console.error("Failed to generate AI summary:", error)
+      aiSummaryLoadingMessageRef.current = null
       Message.error({
         id,
         content: polyglot.t("article_card.ai_summary_error", {
@@ -160,9 +169,17 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
         }),
       })
     } finally {
-      setIsAiSummaryLoading(false)
+      if (aiSummaryRequestIdRef.current === currentRequestId) {
+        setIsAiSummaryLoading(false)
+      }
     }
-  }, [activeContent, isAiSummaryLoading, polyglot, showAiSettings])
+  }, [
+    activeContent,
+    clearAiSummaryLoadingMessage,
+    isAiSummaryLoading,
+    polyglot,
+    showAiSettings,
+  ])
 
   useContentHotkeys({ handleRefreshArticleList: fetchArticleListWithRelatedData })
 
@@ -286,9 +303,12 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
 
   useEffect(() => {
     aiSummaryRequestIdRef.current += 1
+    clearAiSummaryLoadingMessage()
     setAiSummary(null)
     setIsAiSummaryLoading(false)
-  }, [activeContent?.id])
+  }, [activeContent?.id, clearAiSummaryLoadingMessage])
+
+  useEffect(() => clearAiSummaryLoadingMessage, [clearAiSummaryLoadingMessage])
 
   useEffect(() => {
     if (entryId) {
