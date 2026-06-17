@@ -196,14 +196,32 @@ p {
 .article-body table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
+}
+
+.article-body th,
+.article-body td {
+  padding: 12px 8px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.article-body th {
+  background-color: var(--color-fill-1);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .article-body td {
-  vertical-align: top;
-  padding: 8px 8px 8px 0;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  color: var(--color-text-2);
+}
+
+.article-body tr:not(:last-child) th,
+.article-body tr:not(:last-child) td {
+  border-bottom: 1px solid var(--color-border-2);
+}
+
+.article-body td:first-child {
+  font-weight: 600;
 }
 
 .article-body td img {
@@ -215,6 +233,12 @@ p {
 .article-body td a {
   display: inline-block;
   max-width: 100%;
+}
+
+/* Horizontal scroll for wide tables */
+.article-body .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media screen and (max-width: 768px) {
@@ -258,26 +282,6 @@ p {
     margin: 0 var(--image-margin);
     width: var(--image-scale);
     max-width: var(--image-scale);
-  }
-
-  .article-body table {
-    display: block;
-    max-width: 100%;
-  }
-
-  .article-body tbody {
-    display: block;
-    width: 100%;
-  }
-
-  .article-body tr {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article-body td {
-    display: block;
-    width: 100%;
   }
 
   .article-body td .big-image,
@@ -332,9 +336,4 @@ body[arco-theme="dark"] .article-content pre code {
   border-radius: 0;
   color: inherit;
   padding: 0;
-}
-
-/*code 相关样式 - 表格 */
-.article-content td {
-  color: var(--color-text-3);
 }

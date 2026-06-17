@@ -149,24 +149,74 @@ const handleTableBasedCode = (node) => {
 }
 
 // Remove empty td elements from table-based layout content
-const handleContentTable = (node) => {
+// and add data-label attributes for mobile card view
+const handleContentTable = (node, options) => {
   const tbody = node.children.find((child) => child.name === "tbody")
   if (!tbody) {
     return null
   }
 
-  for (const tr of tbody.children) {
-    if (tr.name === "tr") {
-      tr.children = tr.children.filter(
-        (td) =>
-          td.name === "td" &&
-          td.children?.length > 0 &&
-          td.children.some((child) => child.data?.trim() || child.children?.length),
-      )
+  // Extract header labels for mobile card view
+  const thead = node.children.find((child) => child.name === "thead")
+  const headers = []
+  if (thead) {
+    const headerRow = thead.children.find((child) => child.name === "tr")
+    if (headerRow) {
+      for (const child of headerRow.children) {
+        if (child.name === "th") {
+          headers.push(child.children?.[0]?.data || "")
+        }
+      }
+    }
+  } else {
+    // No <thead> — treat the first <tbody> row as a header row (common in RSS content)
+    const firstRowIndex = tbody.children.findIndex(
+      (child) => child.name === "tr" && child.children?.some((c) => c.name === "td"),
+    )
+    if (firstRowIndex !== -1) {
+      const headerRow = tbody.children[firstRowIndex]
+      for (const cell of headerRow.children) {
+        if (cell.name === "td") {
+          headers.push(cell.children?.[0]?.data || "")
+          // Convert <td> to <th> so it renders as a proper header
+          cell.name = "th"
+        }
+      }
     }
   }
 
-  return node
+  for (const tr of tbody.children) {
+    if (tr.name === "tr") {
+      tr.children = tr.children.filter(
+        (cell) =>
+          (cell.name === "td" || cell.name === "th") &&
+          cell.children?.length > 0 &&
+          cell.children.some((child) => child.data?.trim() || child.children?.length),
+      )
+
+      // Attach header labels for mobile card layout
+      if (headers.length > 0) {
+        for (const [index, td] of tr.children.entries()) {
+          if (td.attribs) {
+            td.attribs["data-label"] = headers[index] || ""
+          }
+        }
+      }
+    }
+  }
+
+  // Wrap in scrollable container, skip "table" case to avoid recursion
+  const tableOptions = {
+    ...options,
+    replace: (innerNode) => {
+      if (innerNode.type === "tag" && innerNode.name === "table") {
+        return
+      }
+      return options.replace(innerNode)
+    },
+  }
+
+  return <div className="table-wrapper">{domToReact([node], tableOptions)}</div>
 }
 
 // Helper function to process figcaption content
@@ -319,7 +369,7 @@ const getHtmlParserOptions = (imageSources, togglePhotoSlider) => {
           return handleIframe(node)
         }
         case "table": {
-          return handleContentTable(node)
+          return handleContentTable(node, options)
         }
         default: {
           return node
