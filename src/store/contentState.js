@@ -131,7 +131,10 @@ export const setInfoFrom = createSetter(contentState, "infoFrom")
 export const setInfoId = createSetter(contentState, "infoId")
 export const setIsArticleListReady = createSetter(contentState, "isArticleListReady")
 export const setIsArticleLoading = createSetter(contentState, "isArticleLoading")
-export const setOriginalContentLoadingEntryId = createSetter(contentState, "originalContentLoadingEntryId")
+export const setOriginalContentLoadingEntryId = createSetter(
+  contentState,
+  "originalContentLoadingEntryId",
+)
 export const setLoadMoreVisible = createSetter(contentState, "loadMoreVisible")
 export const setTotal = createSetter(contentState, "total")
 export const resetContent = () => contentState.set(defaultValue)

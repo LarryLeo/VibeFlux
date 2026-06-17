@@ -9,8 +9,7 @@
   padding: 12px 14px;
   border: 1px solid rgba(var(--primary-6), 0.16);
   border-radius: 14px;
-  background:
-    linear-gradient(180deg, rgba(var(--primary-6), 0.04), var(--color-bg-1));
+  background: linear-gradient(180deg, rgba(var(--primary-6), 0.04), var(--color-bg-1));
 }
 
 .ai-settings-tip-header {

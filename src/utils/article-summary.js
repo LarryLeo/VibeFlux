@@ -42,7 +42,7 @@ export const buildArticleSummaryPrompt = ({ content, title, url }) => [
       url ? `来源链接：${url}` : "",
       "文章内容：",
       content,
-      ""
+      "",
     ]
       .filter(Boolean)
       .join("\n"),

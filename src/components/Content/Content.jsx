@@ -173,13 +173,7 @@ const Content = ({ info, getEntries, markAllAsRead }) => {
         setIsAiSummaryLoading(false)
       }
     }
-  }, [
-    activeContent,
-    clearAiSummaryLoadingMessage,
-    isAiSummaryLoading,
-    polyglot,
-    showAiSettings,
-  ])
+  }, [activeContent, clearAiSummaryLoadingMessage, isAiSummaryLoading, polyglot, showAiSettings])
 
   useContentHotkeys({ handleRefreshArticleList: fetchArticleListWithRelatedData })
 

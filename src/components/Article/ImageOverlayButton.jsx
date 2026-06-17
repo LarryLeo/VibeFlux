@@ -31,11 +31,7 @@ const ImageComponent = ({ imgNode, isIcon, isBigImage, index, togglePhotoSlider 
     </Tooltip>
   ) : (
     <span style={{ display: "inline-block", position: "relative", width: "100%" }}>
-      <img
-        {...normalizedImgAttributes}
-        alt={altText}
-        className={isBigImage ? "big-image" : ""}
-      />
+      <img {...normalizedImgAttributes} alt={altText} className={isBigImage ? "big-image" : ""} />
       <Tooltip content={altText} disabled={!altText}>
         <button
           className="image-overlay-button"

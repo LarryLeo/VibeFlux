@@ -4,13 +4,13 @@ A React SPA frontend for [Miniflux](https://github.com/miniflux/v2) RSS reader. 
 
 ## Quick commands
 
-| Command | What |
-|---|---|
-| `pnpm dev` | Dev server on `0.0.0.0:3000` |
-| `pnpm build` | Production build to `build/` |
-| `pnpm lint` | ESLint (flat config) |
-| `pnpm format` | Prettier —write |
-| `pnpm format:check` | Prettier dry-run |
+| Command             | What                                             |
+| ------------------- | ------------------------------------------------ |
+| `pnpm dev`          | Dev server on `0.0.0.0:3000`                     |
+| `pnpm build`        | Production build to `build/`                     |
+| `pnpm lint`         | ESLint (flat config)                             |
+| `pnpm format`       | Prettier —write                                  |
+| `pnpm format:check` | Prettier dry-run                                 |
 | `pnpm update-fonts` | Download Google Fonts locally to `public/fonts/` |
 
 CI runs `lint -> format:check` in that order.
@@ -58,6 +58,7 @@ Multi-stage: `node:22-alpine` builds, `caddy:2-alpine` serves on port 2000. Run 
 ## I18n
 
 Locale JSON files in `src/locales/`. Adding a language requires:
+
 1. Add JSON file in `src/locales/`
 2. Register Arco locale import in `src/App.jsx`
 3. Add Day.js locale import
