@@ -208,11 +208,12 @@ p {
 .article-body th {
   background-color: var(--color-fill-1);
   font-weight: 600;
-  white-space: nowrap;
+  overflow-wrap: break-word;
 }
 
 .article-body td {
   color: var(--color-text-2);
+  overflow-wrap: break-word;
 }
 
 .article-body tr:not(:last-child) th,
